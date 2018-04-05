@@ -1,0 +1,82 @@
+package jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class schDAO {
+	public schDAO() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Connection getConnection() throws SQLException {
+		return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/school?characterEncoding=UTF-8", "root",
+				"admin");
+	}
+	
+	public List<Sschool> list(int start, int count) {
+		 List<Commodity> commoditys = new ArrayList<Commodity>();
+		//List<Commodity> commoditys = new CommodityDAO().list();
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+
+			Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/commodity?characterEncoding=UTF-8",
+					"root", "admin");
+
+			String sql = "select * from commodity order by ProductID asc limit ?,? ";//desc涓洪檷搴�
+
+			PreparedStatement ps = c.prepareStatement(sql);
+			//start=0;count=3;
+			ps.setInt(1, start);
+			ps.setInt(2, count);
+
+			ResultSet rs = ps.executeQuery();
+
+			while (rs.next()) {
+				Commodity commodity = new Commodity();
+				int ProductID = rs.getInt(1);
+				String ProductName = rs.getString(2);
+				String InnerCName = rs.getString(3);
+				float Price = rs.getFloat(4);
+				String UnitPrice = rs.getString(5);
+				String Specification = rs.getString(6);
+				float Weight = rs.getFloat(7);
+				String DetailedInfo = rs.getString(8);
+				String UpshelfDate = rs.getString(9);
+				int StockLevel = rs.getInt(10);
+				float PricePromotion = rs.getFloat(11);
+
+				commodity.ProductID = ProductID;
+				commodity.ProductName = ProductName;
+				commodity.InnerCName = InnerCName;
+				commodity.Price = Price;
+				commodity.UnitPrice = UnitPrice;
+				commodity.Specification = Specification;
+				commodity.Weight = Weight;
+				commodity.DetailedInfo = DetailedInfo;
+				commodity.UpshelfDate = UpshelfDate;
+				commodity.StockLevel = StockLevel;
+				commodity.PricePromotion = PricePromotion;
+				commoditys.add(commodity);
+			}
+
+			ps.close();
+
+			c.close();
+
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return commoditys;
+	}
+
+
+}

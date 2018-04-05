@@ -1,0 +1,31 @@
+<html>
+<head><title>学生信息</title></head>
+<body>
+<div id="llan" align="center">
+    <div style="font-size:24"> 学生信息浏览 </div>
+    <table border="1">
+      <tr align="center">
+        <td style="width:100">姓名</td>
+		<td style="width:100">年龄</td>
+        <td style="width:100">性别</td>
+		<td style="width:100">爱好</td>
+        <td style="width:100">学院</td>
+        <td style="width:100">专业</td>
+		<td style="width:100">修改与删除</td>
+      </tr>
+	  <tr align="center">
+        <td >张三</td>
+		<td >18</td>
+        <td >男</td>
+		<td >体育,音乐</td>
+        <td >计算机学院</td>
+        <td >电子技术</td>
+		<td >
+		  <input type="button" name="update" value="修改">
+		  <input type="button" name="delete" value="删除">
+		</td>
+      </tr>
+    </table>
+  </div>
+ </body> 
+  </html>

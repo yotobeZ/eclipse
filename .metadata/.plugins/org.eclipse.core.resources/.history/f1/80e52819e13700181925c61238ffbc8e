@@ -1,0 +1,202 @@
+
+package jdbc;
+
+import java.sql.Connection;
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import charactor.Student;
+
+public class stuDAO {
+
+	public stuDAO() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Connection getConnection() throws SQLException {
+		return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/school?characterEncoding=UTF-8", "root",
+				"admin");
+	}
+
+	public int getTotal() {
+		int total = 0;
+		try (Connection c = getConnection(); Statement s = c.createStatement();) {
+
+			String sql = "select count(*) from student";
+
+			ResultSet rs = s.executeQuery(sql);
+			while (rs.next()) {
+				total = rs.getInt(1);
+			}
+
+			System.out.println("total:" + total);
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		return total;
+	}
+
+	public void add(Student student) {
+
+		String sql = "insert into hero values(null,?,?,?,?,?,?)";
+		try (Connection c = getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
+
+			ps.setString(1, student.sname);
+			ps.setInt(2, student.sage);
+			ps.setString(3, student.ssex);
+			// hobby需要split划分
+			ps.setString(4, student.shobby);
+			// sschool和smajor需要数据库连接给值
+			ps.setString(5, student.sschool);
+			ps.setInt(6, student.smajor);
+
+			ps.execute();
+
+			ResultSet rs = ps.getGeneratedKeys();
+			if (rs.next()) {
+				int id = rs.getInt(1);
+				student.id = id;
+			}
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+	public void update(Student student) {
+
+		String sql = "update student set sname= ?, sage = ? , ssex = ? ,shobby=?, sschool=?,smajor=? where id = ?";
+		try (Connection c = getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
+
+			ps.setString(1, student.sname);
+			ps.setInt(2, student.sage);
+			ps.setString(3, student.ssex);
+			// hobby需要split划分
+			ps.setString(4, student.shobby);
+			// sschool和smajor需要数据库连接给值
+			ps.setString(5, student.sschool);
+			ps.setInt(6, student.smajor);
+			ps.setInt(7, student.id);
+
+			ps.execute();
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+	public void delete(int id) {
+
+		try (Connection c = getConnection(); Statement s = c.createStatement();) {
+
+			String sql = "delete from student where id = " + id;
+
+			s.execute(sql);
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+	public Student get(int id) {
+		Student student = null;
+
+		try (Connection c = getConnection(); Statement s = c.createStatement();) {
+
+			String sql = "select * from student where id = " + id;
+
+			ResultSet rs = s.executeQuery(sql);
+			String sql1 = "select scname from sschool where sschool.id = student.sschool and student.id=" + id;
+
+			ResultSet rs1 = s.executeQuery(sql1);
+
+			if (rs.next()) {
+				student = new Student();
+				String sname = rs.getString(2);
+				int sage = rs.getInt(3);
+				String ssex = rs.getString(4);
+				String shobby = rs.getString(5);
+				String sschool = rs1.getString("scname");
+				int smajor = rs.getInt(7);
+
+				student.sname = sname;
+				student.sage = sage;
+				student.ssex = ssex;
+				student.shobby = shobby;
+				student.sschool = sschool;
+				student.smajor = smajor;
+				student.id = id;
+			}
+
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		return student;
+	}
+
+	public List<Student> list() {
+		return list(0, Short.MAX_VALUE);
+	}
+
+	public List<Student> list(int start, int count) {
+		List<Student> students = new ArrayList<Student>();
+
+		String sql = "select * from student order by id desc limit ?,? ";
+
+		try (Connection c = getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
+
+			ps.setInt(1, start);
+			ps.setInt(2, count);
+
+			ResultSet rs = ps.executeQuery();
+
+			while (rs.next()) {
+				Student student = new Student();
+				int id = rs.getInt(1);
+				String sname = rs.getString(2);
+				int sage = rs.getInt(3);
+				String ssex = rs.getString(4);
+				String shobby = rs.getString(5);
+				int sschool = rs.getInt(6);
+				int smajor = rs.getInt(7);
+			
+				
+				String sql1 = "select * from sschool where id=" + sschool;
+				ResultSet rs1 = ps.executeQuery(sql1);
+			while(rs1.next()) {
+				String scname = rs1.getString("scname");
+				student.sschool = scname;
+			}	
+				student.sname = sname;
+				student.sage = sage;
+				student.ssex = ssex;
+				student.shobby = shobby;
+				//student.sschool = scname;
+				student.smajor = smajor;
+				student.id = id;
+				students.add(student);
+			}
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+		}
+		return students;
+	}
+
+}

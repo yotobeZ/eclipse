@@ -1,0 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"
+	import="java.util.*,java.sql.*,java.sql.Connection,jdbc.*,charactor.*,java.sql.*"%>
+<%
+request.setCharacterEncoding("UTF-8");
+Student stu=new Student();
+
+stu.setSname(request.getParameter("sname"));
+stu.setSage(Integer.parseInt(request.getParameter("sage")));
+new stuDAO().add(stu);
+%>

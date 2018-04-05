@@ -1,0 +1,49 @@
+package jdbc;
+
+import java.sql.DriverManager;
+
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
+import com.mysql.jdbc.ResultSet;
+
+public class TestJDBC {
+    public static void main(String[] args) {
+          
+    	try {
+    		Class.forName("com.mysql.jdbc.Driver");
+    		Connection c = DriverManager.getConnection(
+    				"jdbc:mysql://127.0.0.1:3306/school?useUnicode=true&characterEncoding=utf8", "root", "admin");
+    		String sql = "select * from loginpeople where name = ? and password = ?";
+    		PreparedStatement ps = c.prepareStatement(sql);
+    		ps.setString(1, name);
+    		ps.setString(2, password);
+    		ResultSet rs = ps.executeQuery();
+    		//System.out.println("111");
+    		if (rs.next()) {
+    			//int grade=rs.getGrade(3);
+    			result = new LoginPeople();
+    			result.setId(rs.getInt(1));
+    			result.setPassword(password);
+    			result.setUsername(name);
+    			result.setPower(rs.getInt("power"));
+    			if (result.getPower() == 1)
+    				response.sendRedirect("/admin.jsp");
+    			else
+    				response.sendRedirect("/others.jsp");
+
+    		} else {
+    			response.sendRedirect("/fail.html");
+    		}
+
+    		ps.close();
+    		c.close();
+    	} catch (ClassNotFoundException e) {
+    		// TODO Auto-generated catch block     
+    		e.printStackTrace();
+    	} catch (SQLException e) {
+    		// TODO Auto-generated catch block     
+    		e.printStackTrace();
+    	}
+          
+    }
+}

@@ -1,0 +1,60 @@
+package jdbc;
+
+import java.sql.Connection;
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import charactor.Sschool;
+
+public class schDAO {
+	public schDAO() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public Connection getConnection() throws SQLException {
+		return DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/school?characterEncoding=UTF-8", "root",
+				"admin");
+	}
+	
+	public List<Sschool> list(int start, int count) {
+		 List<Sschool> sschools = new ArrayList<Sschool>();
+
+
+			String sql = "select * from sschool order by id asc limit ?,? ";
+
+			try (Connection c = getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
+
+				ps.setInt(1, start);
+				ps.setInt(2, count);
+
+				ResultSet rs = ps.executeQuery();
+
+				while (rs.next()) {
+					Sschool sschool = new Sschool();
+					int id = rs.getInt(1);
+					String scname = rs.getString(2);
+					
+					sschool.scname = scname;
+					
+					sschool.id = id;
+					sschools.add(sschool);
+				}
+			} catch (SQLException e) {
+
+				e.printStackTrace();
+			}
+			return sschools;
+		
+
+	}}

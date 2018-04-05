@@ -1,0 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"
+	import="java.util.*,java.sql.*,java.sql.Connection,jdbc.*,charactor.*,java.sql.*"%>
+<%
+Student stu=new Student();
+stu.id=Integer.parseInt(request.getParameter("id"));
+stu.setSname(request.getParameter("name"));
+stu.setSage(Integer.parseInt(request.getParameter("nling")));
+response.sendRedirect("student_infor.jsp");
+%>

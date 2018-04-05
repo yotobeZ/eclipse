@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8" import="java.util.*,jdbc.*,charactor.*,java.sql.*" %>
+
+<html>
+<head><title>Ñ§ÉúÐÅÏ¢</title></head>
+<body>
+<div id="llan" align="center">
+    <div style="font-size:24"> Ñ§ÉúÐÅÏ¢ä¯ÀÀ </div>
+    <table border="1">
+      <tr align="center">
+        <td style="width:100">ÐÕÃû</td>
+		<td style="width:100">ÄêÁä</td>
+        <td style="width:100">ÐÔ±ð</td>
+		<td style="width:100">°®ºÃ</td>
+        <td style="width:100">Ñ§Ôº</td>
+        <td style="width:100">×¨Òµ</td>
+		<td style="width:100">ÐÞ¸ÄÓëÉ¾³ý</td>
+      </tr>
+      <C:forEach items="${"
+	  <tr align="center">
+        <td >ÕÅÈý</td>
+		<td >18</td>
+        <td >ÄÐ</td>
+		<td >ÌåÓý,ÒôÀÖ</td>
+        <td >¼ÆËã»úÑ§Ôº</td>
+        <td >µç×Ó¼¼Êõ</td>
+		<td >
+		  <input type="button" name="update" value="ÐÞ¸Ä">
+		  <input type="button" name="delete" value="É¾³ý">
+		</td>
+      </tr>
+    </table>
+  </div>
+ </body> 
+  </html>

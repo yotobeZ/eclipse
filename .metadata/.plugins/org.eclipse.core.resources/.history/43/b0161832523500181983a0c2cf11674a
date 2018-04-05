@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MyStrutsDemo">
+        <property name="context-root" value="MyStrutsDemo"/>
+        <property name="java-output-path" value="/MyStrutsDemo/build/classes"/>
+    </wb-module>
+</project-modules>

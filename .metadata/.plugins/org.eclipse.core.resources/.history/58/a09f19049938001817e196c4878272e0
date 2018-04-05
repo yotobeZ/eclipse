@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"
+	import="java.util.*,java.sql.*,java.sql.Connection,jdbc.*,charactor.*,java.sql.*"%>
+<%
+request.setCharacterEncoding("UTF-8");
+Student stu=new Student();
+
+stu.setId(Integer.parseInt(request.getParameter("id")));
+stu.setSname(request.getParameter("xming"));
+stu.setSage(Integer.parseInt(request.getParameter("nling")));
+stu.setSsex(request.getParameter("sex"));
+stu.setShobby(request.getParameter("aih"));
+stu.setSschool(request.getParameter("xyuan"));
+new stuDAO().update(stu);
+response.sendRedirect("student_allroot.jsp");
+%>

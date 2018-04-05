@@ -1,0 +1,19 @@
+package charactor;
+
+public class Sschool {
+	public int id;
+	  public String scname;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getScname() {
+		return scname;
+	}
+	public void setScname(String scname) {
+		this.scname = scname;
+	}
+	  
+}

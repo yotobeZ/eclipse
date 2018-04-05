@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"
+	import="java.util.*,java.sql.*,java.sql.Connection,jdbc.*,charactor.*,java.sql.*"%>
+<%
+request.setCharacterEncoding("UTF-8");
+Student stu=new Student();
+
+stu.setId(Integer.parseInt(request.getParameter("id")));
+stu.setSname(request.getParameter("xming"));
+stu.setSage(Integer.parseInt(request.getParameter("nling")));
+stu.setSsex(request.getParameter("sex"));
+//爱好
+
+String [] aihao=request.getParameterValues("aih");
+String myaihao=null;
+		for (int i = 0; i < aihao.length; i++) {
+			String shuiguoname=aihao[i];
+			myaihao = myaihao+"，"+aihao[i];
+			System.out.println(shuiguoname);
+		}
+
+stu.setShobby(myaihao);
+System.out.println(myaihao);
+stu.setSschool(request.getParameter("xyuan"));
+//专业
+stu.setSmajor(request.getParameter("zhye"));
+
+new stuDAO().update(stu);
+response.sendRedirect("student_allroot.jsp");
+%>
