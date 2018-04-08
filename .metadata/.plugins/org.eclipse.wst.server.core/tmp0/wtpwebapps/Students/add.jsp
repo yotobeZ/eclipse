@@ -4,16 +4,41 @@
 <%
 request.setCharacterEncoding("UTF-8");
 Student stu=new Student();
-String sname=request.getParameter("sname");
-stu.setSname(sname);
-Integer sage=Integer.parseInt(request.getParameter("sage"));
-stu.setSage(sage);
+//stu.setId(Integer.parseInt(request.getParameter("id")));
+stu.setSname(request.getParameter("xming"));
+//stu.setSage(Integer.parseInt(request.getParameter("nling")));
 
+if((request.getParameter("nling"))!=null){
+Integer sage=Integer.parseInt((request.getParameter("nling")).trim());
+stu.setSage(sage);}
+stu.setSsex(request.getParameter("sex"));
+if((request.getParameterValues("aih"))!=null){
+String [] aihao=request.getParameterValues("aih");
+String myaihao = null;
+String str2 =null;
+		for (int i = 0; i < aihao.length; i++) {
+			String shuiguoname=aihao[i];
+			myaihao = myaihao+"，"+aihao[i];
+			System.out.println(shuiguoname);
+		}
+		if(aihao.length==1){
+		str2 = String.format("%s", aihao);}
+		if(aihao.length==2){
+			str2 = String.format("%s，%s", aihao);}
+		if(aihao.length==3){
+			str2 = String.format("%s，%s，%s", aihao);}
+		if(aihao.length==4){
+			str2 = String.format("%s，%s，%s，%s", aihao);}
+stu.setShobby(str2);}
+if(request.getParameter("xyuan")!=null){
+stu.setSschool(request.getParameter("xyuan"));}
+//专业
+if(request.getParameter("zhye")!=null){
+stu.setSmajor(request.getParameter("zhye"));}
 new stuDAO().add(stu);
-int total = new stuDAO().getTotal();
-List<Student> stus = new stuDAO().list(0,total);
-System.out.println(stus.toString());
+//int total = new stuDAO().getTotal();
+//List<Student> stus = new stuDAO().list(0,total);
+//System.out.println(stus.toString());
 out.print(stu);
 System.out.println("ccc");
-
 %>

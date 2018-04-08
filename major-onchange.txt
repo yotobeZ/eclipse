@@ -1,0 +1,47 @@
+		//  document.write(v+"我是v");
+		//var v="经济学院";
+		//改变下拉框没有触发下面代码
+		//onchange事件只有在改变时，才会执行smajorShow函数
+		//不管原先专业是什么，只有变成土木学院才会执行到vfor3，其他执行到vfor2
+  /*      var c=<%=schools.size()%>;
+          alert(v+"我是vfor1");
+          var zhye = document.getElementById("zhye");
+		  if(<%=(schools.size()!=0) %>){
+			  alert(v+"我是vfor2"); 
+		  for(count=0;count<c;count++)
+		  {
+			  //oscname一直是土木专业？说明循环没进行下去！！！！！！！！！
+			var oscname="<%=schools.get(count).scname%>";
+
+			if(v==oscname){
+				alert(v+"我是vfor3"); 
+				//  document.write(v+"我是v");
+                  if(<%=(majorsc.length!=0) %>){
+                	  zhye.options.length=0;
+                	  //这里循环也没进行下去
+                      for(jj=0;jj<<%=(majorsc[count].length)%>;jj=<%=j%>){
+                    	  if(<%=(majorsc[count][j]!="专业")%>){
+                    	  alert("<%=(majorsc[count][j])%>");
+					zhye.options.add(new Option("<%=majorsc[count][j]%>","<%=majorsc[count][j] %>"));
+						<%j=j+1;%>
+						}
+                    	  }
+					}
+				}
+              }
+**************************************
+
+				<%
+					//int total = new schDAO().getTotal();
+					System.out.println(myschool + "222");
+					List<Smajor> mymajors = new schDAO().getMajor(myschool);
+
+					//String mymajor=student.smajor; 
+
+					request.setAttribute("mymajors", mymajors);
+					System.out.println(mymajors + "999999");
+					//System.out.println(mymajor);
+				%>
+   }*/
+********************************************
+//	onchange="smajorShow(this.options[this.options.selectedIndex].value)"

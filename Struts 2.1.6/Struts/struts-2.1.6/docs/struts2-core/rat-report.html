@@ -1,0 +1,1128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 2 - RAT (Release Audit Tool) results</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="../../2.x/index.html" id="bannerRight">
+    
+                                            <img src="images/struts2.png" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-01-05
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../../index.html">Struts</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 2</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../downloads.html">Releases</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/thanks.html" class="externalLink">Thanks!</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/sponsorship.html" class="externalLink">Sponsorship</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="docs/home.html">Getting Started</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tutorials.html">Tutorials</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/faqs.html">FAQs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/guides.html">Guides</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2WIKI/home.html" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Reference</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-core/apidocs/index.html">Struts Core / XWork APIs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tag-reference.html">Tag Reference</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2PLUGINS/home.html" class="externalLink">Plugin Registry</a>
+          </li>
+          </ul>
+              <h5>Plugin APIs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-config-browser-plugin/apidocs/index.html">Config Browser</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jasperreports-plugin/apidocs/index.html">JasperReports</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jfreechart-plugin/apidocs/index.html">JFreeChart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jsf-plugin/apidocs/index.html">JavaServer Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-pell-multipart-plugin/apidocs/index.html">Pell Multipart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-plexus-plugin/apidocs/index.html">Plexus</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitegraph-plugin/apidocs/index.html">Sitegraph</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitemesh-plugin/apidocs/index.html">Sitemesh</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-struts1-plugin/apidocs/index.html">Struts 1</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-tiles-plugin/apidocs/index.html">Tiles</a>
+          </li>
+          </ul>
+              <h5>Development</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../2.x/index.html">Struts 2.x Draft Docs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../helping.html">How to Help FAQ</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/dev-mail.html">Development Lists</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/builds.html">Source Code</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/releases.html">Release Guidelines</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/volunteers.html">Volunteers</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/bylaws.html">PMC Charter</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../struts-sandbox/index.html">Sandbox</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://svn.apache.org/viewcvs.cgi/struts/" class="externalLink">Source Repository</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+            
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDocs</a>
+          </li>
+                  
+    <li class="none">
+              <strong>RAT Report</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="jxr.html">Source Xref</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="surefire-report.html">Surefire Report</a>
+          </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>RAT (Release Audit Tool) results</h2>
+<p>The following document contains the results of <a href="${project.url}">RAT (Release Audit Tool)</a>.</p>
+<p><div class="source"><pre>
+*****************************************************
+Summary
+-------
+Notes: 2
+Binaries: 1
+Archives: 0
+Standards: 722
+
+Apache Licensed: 718
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+4 Unknown Licenses
+
+*******************************
+
+Archives (+ indicates readable, $ unreadable): 
+
+ 
+*****************************************************
+  Files with AL headers will be marked L
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/template/BaseTemplateEngineTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/FormButtonTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/ActionComponentTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/UIComponentTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/ComponentTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/FormTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/UIBeanTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/components/PropertyTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/mapper/CompositeActionMapperTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapperTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/mapper/RestfulActionMapperTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/mapper/Restful2ActionMapperTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ng/StrutsPrepareAndExecuteFilterIntegrationTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ng/TwoFilterIntegrationTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/StrutsResultSupportTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ServletActionRedirectResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ServletRedirectResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/PlainTextResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/StaticContentLoaderTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/NullActionMapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ServletDispatchedTestAssertInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/SessionMapTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/FilterTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/DispatcherTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/HttpHeaderResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ActionContextCleanUpTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/ServletDispatcherResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/StreamResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/FilterDispatcherTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/dispatcher/VelocityResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/freemarker/tags/TagModelTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/freemarker/FreeMarkerResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/freemarker/FreemarkerTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/freemarker/TestBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/freemarker/TestAction.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/freemarker/FreemarkerManagerTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/xslt/XSLTResultTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/InputTransferSelectTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/PasswordTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/ComponentTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/SubmitTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/IntValidationAction.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/ComboBoxTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/UpDownSelectTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/OptionTransferSelectTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/DateTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/DoubleSelectTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/TokenTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/TextareaTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/ActionMessageTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/User.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/OptGroupTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/FileTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/CheckboxListTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/ActionErrorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/MockTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/CheckboxTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/JspTemplateTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/TextfieldTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/TooltipTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/HeadTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/RadioTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/FormTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/AnchorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/StrutsBodyContent.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/LabelTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/SelectTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/DivTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/ResetTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/FieldErrorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/HiddenTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/TestAction1.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ui/ValidationStylesTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/AbstractTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/BeanTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockHttpServletResponse.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ElseIfTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/MergeIteratorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/AnchorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ActionTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/SubsetIteratorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/PushTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/I18nTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/AppendIteratorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/IncludeTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/TextTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockPageContext.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/PropertyTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockHttpSession.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/DynAttribsTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/ElseTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/IteratorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/SetTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockBodyContent.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockJspWriter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockServletContext.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/IfTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/IteratorGeneratorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/StrutsMockHttpServletRequest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/AbstractUITagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/SortIteratorTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/jsp/URLTagTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/util/ContextUtilTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/util/TextUtilTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/util/UrlHelperTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/util/ResourceUtilTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/views/TemplateEngineManagerTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/validation/JSONValidationInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/validation/AnnotationValidationInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/TokenInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/MessageStoreInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/TokenSessionStoreInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/FileUploadInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/RolesInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/StrutsConversionErrorInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/CheckboxInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/CreateSessionInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/ExecuteAndWaitDelayAction.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/CookieInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/ClearSessionInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/ExecuteAndWaitInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/interceptor/ServletConfigInterceptorTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/config/SettingsTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/config/TestSettings.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/config/LegacyPropertiesConfigurationProviderTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/config/BeanSelectionProviderTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/CounterTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/TokenHelperTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/PrefixTrieTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/StrutsUtilTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/ContainUtilTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/InvocationSessionStoreTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/util/StrutsTypeConverterTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/StrutsTestCase.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/TestUtils.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/TestActionTagResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/RequestUtilsTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/ExecutionCountTestAction.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/TestAction.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/TestResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/TestConfigurationProvider.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/ServletActionContextTest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/java/org/apache/struts2/SomeEnum.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/components/template/theme1/themeThroughClassPath.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/components/template/theme1/themeThroughFileSystem.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/components/template/dummy.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/components/tempo.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/dispatcher/ng/struts-no-op.xml
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/dispatcher/someJspFile.jsp
+ !????? /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/static/resource.css
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/views/freemarker/someFreeMarkerFile.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/interceptor/FileUploadInterceptor.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/TestAction-validation.xml
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/TestAction.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/othertest.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/template/test/checkbox.jsp
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/template/test/Component.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest2.xsl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest3.xsl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest4.xsl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest5.xsl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/testmessages2.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest.xsl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/struts.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/testmessages.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/struts.xml
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/validators.xml
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest-val.xml
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/log4j.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/test.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/XSLTResultTest4.badinclude.xsl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/impl/StrutsObjectFactory.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/impl/StrutsActionProxy.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/impl/StrutsActionProxyFactory.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/servlet/interceptor/ServletPrincipalProxy.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/VelocityTemplateEngine.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/TemplateEngine.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/FreemarkerTemplateEngine.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/Template.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/BaseTemplateEngine.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/TemplateEngineManager.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/JspTemplateEngine.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/template/TemplateRenderingContext.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/FormButton.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Component.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Password.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Submit.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ComboBox.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/MergeIterator.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/DoubleSelect.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ContextBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/IteratorComponent.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Date.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/OptionTransferSelect.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/I18n.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/File.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/OptGroup.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Push.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/AppendIterator.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/CheckboxList.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Include.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Text.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Property.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Debug.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Checkbox.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ActionError.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Set.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ServletUrlRenderer.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Radio.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ListUIBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Param.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ActionComponent.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/GenericUIBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Head.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/URL.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Form.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/UIBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/InputTransferSelect.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Bean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ElseIf.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Anchor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/UpDownSelect.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/TextArea.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Label.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Select.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Token.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ActionMessage.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/ClosingUIBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Div.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Reset.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Else.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/TextField.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/UrlRenderer.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/DoubleListUIBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/Hidden.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/FieldError.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/components/If.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/Settings.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/DelegatingSettings.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/LegacyPropertiesConfigurationProvider.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/DefaultSettings.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/BeanSelectionProvider.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/StrutsXmlConfigurationProvider.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/NullResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/DefaultPropertiesProvider.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/ServletContextSingleton.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/PropertiesSettings.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/config/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/multipart/JakartaMultiPartRequest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/multipart/MultiPartRequest.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/multipart/MultiPartRequestWrapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/multipart/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/ActionMapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/CompositeActionMapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/RestfulActionMapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/ActionMapping.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/Restful2ActionMapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/mapper/ParameterAction.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/servlet/ServletHostConfig.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/servlet/StrutsServlet.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/filter/StrutsPrepareAndExecuteFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/filter/FilterHostConfig.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/filter/StrutsPrepareFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/filter/StrutsExecuteFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/PrepareOperations.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/HostConfig.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/package-info.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/ExecuteOperations.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ng/InitOperations.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/StrutsResultSupport.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ApplicationMap.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ServletActionRedirectResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ServletRedirectResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/PlainTextResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/StaticContentLoader.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/StrutsRequestWrapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/DefaultStaticContentLoader.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/DefaultActionSupport.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/SessionMap.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/FilterDispatcherCompatWeblogic61.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/RequestMap.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/Dispatcher.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/HttpHeaderResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ServletDispatcherResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/ActionContextCleanUp.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/StreamResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/FilterDispatcher.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/DispatcherListener.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/dispatcher/VelocityResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/TextProviderHelper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/StrutsTestCaseHelper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/IteratorGenerator.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/AttributeMap.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/DateFormatter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/StrutsUtil.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/SortIteratorFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/ServletContextAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/ClassLoaderUtils.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/FastByteArrayOutputStream.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/Counter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/MergeIteratorFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/TokenHelper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/Timer.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/VelocityStrutsUtil.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/PrefixTrie.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/SubsetIteratorFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/TabbedPane.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/MakeIterator.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/AppendIteratorFilter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/URLBean.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/ContainUtil.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/InvocationSessionStore.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/ObjectFactoryDestroyable.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/IteratorFilterSupport.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/ListEntry.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/util/StrutsTypeConverter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/LabelModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/SelectModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/CheckboxListModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/PropertyModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/TextModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/CheckboxModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/HiddenModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/FieldErrorModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/RadioModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ParamModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/URLModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/SubmitModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/InputTransferSelectModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/AnchorModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/TagModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/UpDownSelectModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/DateModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/OptionTransferSelectModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/FileModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/I18nModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/OptGroupModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/PushModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/TokenModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ResetModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/DivModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ActionMessageModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/IncludeModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/StrutsModels.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ActionErrorModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/TextFieldModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ElseModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/IteratorModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/SetModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/IfModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/HeadModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/PasswordModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ComponentModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/FormModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/BeanModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ElseIfModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/CallbackWriter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ComboBoxModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/DoubleSelectModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/ActionModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/tags/TextAreaModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/ScopesHashModel.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/FreemarkerResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/StrutsBeanWrapper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/StrutsClassTemplateLoader.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/freemarker/FreemarkerManager.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/SimpleTextNode.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/BeanAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/StringAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/AdapterFactory.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/AbstractAdapterNode.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ProxyAttrAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/AbstractAdapterElement.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/MapAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ArrayAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/AdapterNode.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ServletURIResolver.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ProxyNodeAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/XSLTResult.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/SimpleAdapterDocument.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ProxyNamedNodeMap.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/SimpleNodeList.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ProxyElementAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/CollectionAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/xslt/ProxyTextNodeAdapter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/iterator/MergeIteratorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/iterator/SubsetIteratorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/iterator/IteratorGeneratorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/iterator/AppendIteratorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/iterator/SortIteratorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/SubmitTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/InputTransferSelectTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/AnchorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/UpDownSelectTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/TextareaTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/OptionTransferSelectTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/OptGroupTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/FileTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/TokenTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/ResetTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/AbstractClosingTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/ActionMessageTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/DivTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/ActionErrorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/TextFieldTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/AbstractDoubleListTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/AbstractListTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/AbstractUITag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/HeadTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/ComponentTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/PasswordTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/FormTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/ComboBoxTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/DoubleSelectTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/LabelTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/SelectTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/CheckboxListTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/DebugTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/CheckboxTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/HiddenTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/FieldErrorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/RadioTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/AbstractRequiredListTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ui/OgnlTool.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/BeanTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ElseIfTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ContextBeanTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ActionTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/DateTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/StrutsBodyTagSupport.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/I18nTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/PushTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/IncludeTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/TextTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/PropertyTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ElseTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/IteratorTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/SetTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/IfTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ComponentTagSupport.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/ParamTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/TagUtils.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/IteratorStatus.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/jsp/URLTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/annotations/StrutsTag.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/annotations/StrutsTagSkipInheritance.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/annotations/StrutsTagAttribute.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/util/ContextUtil.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/util/TextUtil.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/util/UrlHelper.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/util/ResourceUtil.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/util/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ParamDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/URLDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/SubmitDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/InputTransferSelectDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/AnchorDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/UpDownSelectDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/OptionTransferSelectDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/DateDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/PushDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/OptGroupDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/I18nDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/FileDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/TokenDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/DivDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ResetDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ActionMessageDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/CheckBoxListDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/IncludeDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/CheckBoxDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ActionErrorDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/TextFieldDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/SetDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/HeadDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ComponentDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/PasswordDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/FormDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/AbstractDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/BeanDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ComboBoxDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/DoubleSelectDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/TextAreaDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/ActionDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/SelectDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/LabelDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/PropertyDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/TextDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/HiddenDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/FieldErrorDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/components/RadioDirective.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/StrutsResourceLoader.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/StrutsVelocityContext.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/VelocityManager.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/velocity/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/TagLibrary.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/DefaultTagLibrary.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/views/JspSupportServlet.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/validation/SkipValidation.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/validation/JSONValidationInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/validation/AnnotationValidationInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/debugging/PrettyPrintWriter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/debugging/DebuggingInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/debugging/ObjectToHTMLWriter.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/TokenInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/NoParameters.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ParameterAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/PrincipalAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/StrutsConversionErrorInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/SessionAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/RolesInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/FileUploadInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/CheckboxInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/RequestAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ClearSessionInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ActionMappingParametersInteceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/CookiesAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ServletRequestAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/BackgroundProcess.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/MessageStoreInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/TokenSessionStoreInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/PrincipalProxy.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ApplicationAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ServletResponseAware.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/CreateSessionInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/CookieInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ScopeInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ExecuteAndWaitInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ServletConfigInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/interceptor/ProfilingActivationInterceptor.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/StrutsStatics.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/StrutsConstants.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/StrutsException.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/ServletActionContext.java
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/java/org/apache/struts2/RequestUtils.java
+  N     /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/META-INF/README.txt
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/dispatcher/error.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/static/inputtransferselect.js
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/static/optiontransferselect.js
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/static/utils.js
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/static/domTT.css
+  B     /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/static/tooltip.gif
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/util/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/views/freemarker/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/views/jsp/iterator/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/views/jsp/ui/table/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/views/jsp/ui/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/debugging/webconsole.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/debugging/console.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/debugging/browser.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/debugging/webconsole.css
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/debugging/webconsole.js
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/wait.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/interceptor/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/default.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/struts-messages_pl.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/struts-messages.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/struts-messages_pt.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/struts-messages_da.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/struts-messages_de.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/org/apache/struts2/package.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/a.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/div.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/a-close.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/form.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/submit.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/div-close.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/form-close.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/tab.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/ajax/tab-close.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/empty.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/password.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/form.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/submit.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/scripting-events.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/form-close.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/combobox.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/doubleselect.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/textarea.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/file.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/label.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/select.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/token.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/checkboxlist.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/text.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/debug.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/checkbox.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/table.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/hidden.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/simple/radiomap.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/empty.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/controlfooter.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/password.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/submit.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/form.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/form-close.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/combobox.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/doubleselect.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/textarea.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/file.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/label.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/select.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/token.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/checkboxlist.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/text.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/debug.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/checkbox.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/table.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/controlheader.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/hidden.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/archive/xhtml/radiomap.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/radiomap.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/controlfooter.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/head.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/password.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/submit.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/form.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/inputtransferselect.ftl
+ !????? /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/submit-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/form-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/combobox.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/theme.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/doubleselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/updownselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/textarea.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/optiontransferselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/file.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/controlheader-core.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/label.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/select.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/control.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/validation.js
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/checkboxlist.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/reset.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/control-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/text.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/debug.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/checkbox.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/styles.css
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/controlheader.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/form-validate.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/hidden.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/radiomap.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/empty.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/controlfooter.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/submit.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/inputtransferselect.ftl
+ !????? /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/submit-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/combobox.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/dynamic-attributes.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/doubleselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/updownselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/optiontransferselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/textarea.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/file.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/a.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/token.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/div.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/checkboxlist.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/reset.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/a-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/div-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/table.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/css.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/controlheader.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/fielderror.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/head.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/password.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/form.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/scripting-events.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/form-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/common-attributes.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/optgroup.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/label.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/select.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/actionmessage.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/text.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/checkbox.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/debug.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/actionerror.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/form-common.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/radiomap.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/form-close-validate.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/controlfooter.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/submit.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/inputtransferselect.ftl
+ !????? /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/submit-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/combobox.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/doubleselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/updownselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/textarea.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/optiontransferselect.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/controlheader-core.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/file.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/reset.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/checkboxlist.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/styles.css
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/controlheader.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/form-validate.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/head.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/password.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/form.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/form-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/theme.properties
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/label.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/select.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/control.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/validation.js
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/control-close.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/text.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/debug.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/checkbox.ftl
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/tooltip.ftl
+  N     /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/NOTICE.txt
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/struts-default.xml
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/struts.vm
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/overview.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/struts-2.0.dtd
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/struts-2.1.dtd
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/site/confluence/ww-template-autoexport.html
+  AL    /home/musachyb/src/STRUTS_2_1_6/target/checkout/core/pom.xml
+ 
+ *****************************************************
+ Printing headers for files without AL header...
+ 
+ 
+ =======================================================================
+ ==/home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/test/resources/org/apache/struts2/static/resource.css
+ =======================================================================
+ heya!
+
+ =======================================================================
+ ==/home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/css_xhtml/submit-close.ftl
+ =======================================================================
+ &lt;#include &quot;/${parameters.templateDir}/simple/submit-close.ftl&quot; /&gt;
+&lt;#if parameters.labelposition?default(&quot;top&quot;) == 'top'&gt;
+&lt;/div&gt; &lt;#t/&gt;
+&lt;#else&gt;
+&lt;/span&gt; &lt;#t/&gt;
+&lt;/#if&gt;
+
+ =======================================================================
+ ==/home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/simple/submit-close.ftl
+ =======================================================================
+ &lt;#if parameters.type?? &amp;&amp; parameters.type==&quot;button&quot;&gt;
+&lt;#if (parameters.body)?default(&quot;&quot;)?length gt 0&gt;${parameters.body}&lt;#elseif parameters.label??&gt;&lt;@s.property value=&quot;parameters.label&quot;/&gt;&lt;#rt/&gt;&lt;/#if&gt;
+&lt;/button&gt;
+&lt;#else&gt;
+${parameters.body}&lt;#rt/&gt;
+&lt;/#if&gt;
+
+ =======================================================================
+ ==/home/musachyb/src/STRUTS_2_1_6/target/checkout/core/src/main/resources/template/xhtml/submit-close.ftl
+ =======================================================================
+ &lt;#include &quot;/${parameters.templateDir}/simple/submit-close.ftl&quot; /&gt;
+&lt;/div&gt;&lt;#t/&gt;
+&lt;#include &quot;/${parameters.templateDir}/xhtml/controlfooter.ftl&quot; /&gt;
+</pre>
+</div>
+</p>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2009
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

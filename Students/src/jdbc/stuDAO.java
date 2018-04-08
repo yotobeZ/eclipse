@@ -50,15 +50,13 @@ public class stuDAO {
 
 	public void add(Student student) {
 
-		String sql = "insert into student1 values(null,?,?,?,?,?,?)";
+		String sql = "insert into student1(sname,sage,ssex,shobby,sschool,smajor) values(?,?,?,?,?,?)";
 		try (Connection c = getConnection(); PreparedStatement ps = c.prepareStatement(sql);) {
 
 			ps.setString(1, student.sname);
 			ps.setInt(2, student.sage);
 			ps.setString(3, student.ssex);
-			// hobby需要split划分
 			ps.setString(4, student.shobby);
-			// sschool和smajor需要数据库连接给值
 			ps.setString(5, student.sschool);
 			ps.setString(6, student.smajor);
 
@@ -68,11 +66,13 @@ public class stuDAO {
 			if (rs.next()) {
 				int id = rs.getInt(1);
 				student.id = id;
+
 			}
 		} catch (SQLException e) {
 
 			e.printStackTrace();
 		}
+		
 	}
 
 	public void update(Student student) {
@@ -83,9 +83,9 @@ public class stuDAO {
 			ps.setString(1, student.sname);
 			ps.setInt(2, student.sage);
 			ps.setString(3, student.ssex);
-			// hobby需要split划分
+			// hobby锟斤拷要split锟斤拷锟斤拷
 			ps.setString(4, student.shobby);
-			// sschool和smajor需要数据库连接给值
+			// sschool锟斤拷smajor锟斤拷要锟斤拷锟捷匡拷锟斤拷锟接革拷值
 			ps.setString(5, student.sschool);
 			ps.setString(6, student.smajor);
 			ps.setInt(7, student.id);
@@ -121,28 +121,7 @@ public class stuDAO {
 
 			String sql = "select * from student1 where id = " + id;
 			ResultSet rs = s.executeQuery(sql);
-			/*				String sql1 = "select * from sschool where id=" + sschool;
-				Statement s1 = c.createStatement();
-				ResultSet rs1 = s1.executeQuery(sql1);
-				// ResultSet rs1 = s.execute(sql1);
-				if (rs1.next()) {
-					String scname = rs1.getString("scname");
-					student.sschool = scname;
-				}
 
-				String sql2 = "select * from smajor where id=" + smajor;
-				Statement s2 = c.createStatement();
-				ResultSet rs2 = s2.executeQuery(sql2);
-				// ResultSet rs1 = s.execute(sql1);
-				if (rs2.next()) {
-					String mname = rs2.getString("mname");
-					student.smajor = mname;
-				}
-*/
-	/*		String sql1 = "select * from sschool where sschool.id = student.sschool and student.id=" + id;
-			ResultSet rs1 = s.executeQuery(sql1);
-			String sql2 = "select * from smajor where smajor.id= student.smajor and student.id=" + id;	
-			ResultSet rs2 = s.executeQuery(sql2);*/
 			
 			if (rs.next()) {
 				student = new Student();
@@ -152,26 +131,6 @@ public class stuDAO {
 				String shobby = rs.getString(5);
 				String sschool = rs.getString(6);
 				String smajor = rs.getString(7);
-				
-			/*	String sql1 = "select * from sschool where id=" + sschool;
-				Statement s1 = c.createStatement();
-				ResultSet rs1 = s1.executeQuery(sql1);
-				// ResultSet rs1 = s.execute(sql1);
-				if (rs1.next()) {
-					String scname = rs1.getString("scname");
-					student.sschool = scname;
-				}
-
-				String sql2 = "select * from smajor where id=" + smajor;
-				Statement s2 = c.createStatement();
-				ResultSet rs2 = s2.executeQuery(sql2);
-				// ResultSet rs1 = s.execute(sql1);
-				if (rs2.next()) {
-					String mname = rs2.getString("mname");
-					student.smajor = mname;
-				}*/
-				
-				
 
 				student.sname = sname;
 				student.sage = sage;

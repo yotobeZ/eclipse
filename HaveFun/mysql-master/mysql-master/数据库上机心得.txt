@@ -1,0 +1,24 @@
+1.sql语言只能一句一句执行
+2.插入以自己的主键为外键的数据时，应当先插入无外键的数据，否则其他条记录外键依赖于未插入的主键时，将无法执行插入语句；
+逐条插入已存在的主键作为外键的数据
+思考：如果大量数据，怎么依次来找以已插入数据的主键为外键（select where “主键属性”=“要插入数据的外键属性”）
+或者 外键属性=已插入数据的主键，模糊查询全部找出再来插入
+3.MySQL对字母大小写不敏感
+4.插入数据某个属性为空时，不写那个属性，也不赋值即可，不能写属性，然后赋值为null（可能是因为字符类型不一定匹配）
+5.select sname,year(sbirthday) from student;     //year（）用法
+6.MySQL好像没有getdate方法
+7.（7）查询“信管系 0101”班全体学生名单； 这题查询时有点坑...
+输入数据时 信管系 0101之间多了一个空格，所以查询时候按 信管系0101查，总是没数据
+空格在查询时一定要注意，不然很多查询都不正确，所以在输入数据时控制好格式
+8.（8）查询查询所有年龄在 27 岁以下的学生姓名及其年龄；
+select sname,year(curdate())-year(sbirthday)  as '年龄' 
+from student  where year(curdate())-year(sbirthday)<27;
+ 如果写
+select sname,year(curdate())-year(sbirthday)  as '年龄' 
+from student  where  '年龄'<27;
+则查询无效，数据不正确
+9.select cno,cname from course where cname like '%/_%'escape'/'; 这里/换成\运行时说语法不对
+select cno,cname from course where cname like '%@_%'escape'@'; 用@竟然也可以
+10.两个排序的查询和格式： order by 第一个查询条件,第二个查询条件；
+11.视图中无论加不加with check option，当执行插入语句和视图定义的条件不符合时，插入语句都会加到原数据表上，而视图上无变化；
+当执行更新语句和视图定义的条件不符时，视图上均会删除此条记录

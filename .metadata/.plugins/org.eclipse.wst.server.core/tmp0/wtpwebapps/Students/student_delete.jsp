@@ -6,5 +6,5 @@ int id = Integer.parseInt(request.getParameter("id"));
  
 new stuDAO().delete(id);
 
-response.sendRedirect("student_infor.jsp");
+response.sendRedirect("student_allroot.jsp");
 %>

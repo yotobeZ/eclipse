@@ -1,0 +1,33 @@
+-classpath '/Volumes/Home/rainerh/projects/apache/struts/xwork/target/classes:/Volumes/Home/rainerh/.m2/repository/junit/junit/4.5/junit-4.5.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-aop/2.5.6/spring-aop-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-web/2.5.6/spring-web-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/org/testng/testng/5.1/testng-5.1-jdk15.jar:/Volumes/Home/rainerh/.m2/repository/org/aspectj/aspectjweaver/1.6.1/aspectjweaver-1.6.1.jar:/Volumes/Home/rainerh/.m2/repository/opensymphony/ognl/2.6.11/ognl-2.6.11.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-test/2.5.6/spring-test-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-core/2.5.6/spring-core-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-aspects/2.5.6/spring-aspects-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/org/aspectj/aspectjrt/1.6.1/aspectjrt-1.6.1.jar:/Volumes/Home/rainerh/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-beans/2.5.6/spring-beans-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Volumes/Home/rainerh/.m2/repository/asm/asm-commons/3.1/asm-commons-3.1.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-context-support/2.5.6/spring-context-support-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/Volumes/Home/rainerh/.m2/repository/org/springframework/spring-context/2.5.6/spring-context-2.5.6.jar:/Volumes/Home/rainerh/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Volumes/Home/rainerh/.m2/repository/asm/asm-tree/3.1/asm-tree-3.1.jar'
+ -encoding
+'UTF-8'
+-protected
+-sourcepath
+'/Volumes/Home/rainerh/projects/apache/struts/xwork/src/java'
+-author
+-bottom
+'Copyright &#169; 2008 <a href="http://www.opensymphony.com/">OpenSymphony</a>. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/Volumes/Home/rainerh/projects/apache/struts/xwork/target/apidocs'
+-doctitle
+'XWork 2.1.2 API'
+-group
+'XWork Packages' 'com.opensymphony.xwork2*'
+-link
+'http://java.sun.com/j2se/1.5.0/docs/api'
+-link
+'http://java.sun.com/javaee/5/docs/api'
+-link
+'http://struts.apache.org/2.x/struts2-core/apidocs'
+-link
+'http://jakarta.apache.org/commons/logging/apidocs'
+-link
+'http://logging.apache.org/log4j/docs/api'
+-link
+'http://static.springframework.org/spring/docs/2.0.x/api'
+-use
+-version
+-windowtitle
+'XWork 2.1.2 API'

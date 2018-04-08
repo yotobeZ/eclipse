@@ -1,0 +1,1671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 2 - Project Dependencies</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="../../2.x/index.html" id="bannerRight">
+    
+                                            <img src="images/struts2.png" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-01-05
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../../index.html">Struts</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 2</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../downloads.html">Releases</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/thanks.html" class="externalLink">Thanks!</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/sponsorship.html" class="externalLink">Sponsorship</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="docs/home.html">Getting Started</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tutorials.html">Tutorials</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/faqs.html">FAQs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/guides.html">Guides</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2WIKI/home.html" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Reference</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-core/apidocs/index.html">Struts Core / XWork APIs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tag-reference.html">Tag Reference</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2PLUGINS/home.html" class="externalLink">Plugin Registry</a>
+          </li>
+          </ul>
+              <h5>Plugin APIs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-config-browser-plugin/apidocs/index.html">Config Browser</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jasperreports-plugin/apidocs/index.html">JasperReports</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jfreechart-plugin/apidocs/index.html">JFreeChart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jsf-plugin/apidocs/index.html">JavaServer Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-pell-multipart-plugin/apidocs/index.html">Pell Multipart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-plexus-plugin/apidocs/index.html">Plexus</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitegraph-plugin/apidocs/index.html">Sitegraph</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitemesh-plugin/apidocs/index.html">Sitemesh</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-struts1-plugin/apidocs/index.html">Struts 1</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-tiles-plugin/apidocs/index.html">Tiles</a>
+          </li>
+          </ul>
+              <h5>Development</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../2.x/index.html">Struts 2.x Draft Docs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../helping.html">How to Help FAQ</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/dev-mail.html">Development Lists</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/builds.html">Source Code</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/releases.html">Release Guidelines</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/volunteers.html">Volunteers</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../dev/bylaws.html">PMC Charter</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../struts-sandbox/index.html">Sandbox</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://svn.apache.org/viewcvs.cgi/struts/" class="externalLink">Source Repository</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-info.html">Project Information</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="index.html">About</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="integration.html">Continuous Integration</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Dependencies</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="dependency-convergence.html">Dependency Convergence</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="dependency-management.html">Dependency Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="issue-tracking.html">Issue Tracking</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="mail-lists.html">Mailing Lists</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugin-management.html">Plugin Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="license.html">Project License</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugins.html">Project Plugins</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="project-summary.html">Project Summary</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="team-list.html">Project Team</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="source-repository.html">Source Repository</a>
+          </li>
+              </ul>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Project Dependencies</h2>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Classifier</th>
+<th>Type</th>
+<th>Optional</th>
+</tr>
+<tr class="b"><td>com.opensymphony</td>
+<td><a href="http://www.opensymphony.com/xwork" class="externalLink">xwork</a></td>
+<td>2.1.2</td>
+<td>-</td>
+<td>jar</td>
+<td>No</td>
+</tr>
+<tr class="a"><td>commons-fileupload</td>
+<td><a href="http://commons.apache.org/fileupload/" class="externalLink">commons-fileupload</a></td>
+<td>1.2.1</td>
+<td>-</td>
+<td>jar</td>
+<td>No</td>
+</tr>
+<tr class="b"><td>commons-io</td>
+<td><a href="http://jakarta.apache.org/commons/io/" class="externalLink">commons-io</a></td>
+<td>1.3.2</td>
+<td>-</td>
+<td>jar</td>
+<td>No</td>
+</tr>
+<tr class="a"><td>opensymphony</td>
+<td><a href="http://ognl.org" class="externalLink">ognl</a></td>
+<td>2.6.11</td>
+<td>-</td>
+<td>jar</td>
+<td>No</td>
+</tr>
+<tr class="b"><td>org.freemarker</td>
+<td><a href="http://www.freemarker.org" class="externalLink">freemarker</a></td>
+<td>2.3.13</td>
+<td>-</td>
+<td>jar</td>
+<td>No</td>
+</tr>
+<tr class="a"><td>junit</td>
+<td><a href="http://junit.org" class="externalLink">junit</a></td>
+<td>3.8.2</td>
+<td>-</td>
+<td>jar</td>
+<td>Yes</td>
+</tr>
+<tr class="b"><td>org.apache.struts</td>
+<td><a href="http://struts.apache.org" class="externalLink">struts-annotations</a></td>
+<td>1.0.4</td>
+<td>-</td>
+<td>jar</td>
+<td>Yes</td>
+</tr>
+<tr class="a"><td>org.apache.velocity</td>
+<td><a href="http://velocity.apache.org/engine/releases/velocity-1.5/" class="externalLink">velocity</a></td>
+<td>1.5</td>
+<td>-</td>
+<td>jar</td>
+<td>Yes</td>
+</tr>
+<tr class="b"><td>org.apache.velocity</td>
+<td><a href="http://jakarta.apache.org/velocity/tools/" class="externalLink">velocity-tools</a></td>
+<td>1.3</td>
+<td>-</td>
+<td>jar</td>
+<td>Yes</td>
+</tr>
+<tr class="a"><td>org.springframework</td>
+<td><a href="http://www.springframework.org" class="externalLink">spring</a></td>
+<td>2.0.8</td>
+<td>-</td>
+<td>jar</td>
+<td>Yes</td>
+</tr>
+<tr class="b"><td>org.testng</td>
+<td><a href="http://testng.org" class="externalLink">testng</a></td>
+<td>5.1</td>
+<td>jdk15</td>
+<td>jar</td>
+<td>Yes</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>test</h3>
+<p>The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>jmock</td>
+<td>jmock</td>
+<td>1.0.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>log4j</td>
+<td>log4j</td>
+<td>1.2.9</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>mockobjects</td>
+<td>mockobjects-alt-jdk1.3</td>
+<td>0.09</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>mockobjects</td>
+<td>mockobjects-alt-jdk1.3-j2ee1.3</td>
+<td>0.09</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>mockobjects</td>
+<td>mockobjects-core</td>
+<td>0.09</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>mockobjects</td>
+<td>mockobjects-jdk1.3</td>
+<td>0.09</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>mockobjects</td>
+<td>mockobjects-jdk1.3-j2ee1.3</td>
+<td>0.09</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.easymock</td>
+<td><a href="http://www.easymock.org" class="externalLink">easymock</a></td>
+<td>2.0</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>org.springframework</td>
+<td><a href="http://www.springframework.org" class="externalLink">spring-mock</a></td>
+<td>2.0.8</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>provided</h3>
+<p>The following is a list of provided dependencies for this project. These dependencies are required to compile the application, but should be provided by default when using the library:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>javax.servlet</td>
+<td>jsp-api</td>
+<td>2.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>javax.servlet</td>
+<td>servlet-api</td>
+<td>2.4</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>system</h3>
+<p>The following is a list of system dependencies for this project. These dependencies are required to compile the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>com.sun</td>
+<td>tools</td>
+<td>1.5.0</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Transitive Dependencies</h2>
+<p>The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies.</p>
+<div class="section"><h3>compile</h3>
+<p>The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application:</p>
+<table class="bodyTable"><tr class="b"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="a"><td>avalon-framework</td>
+<td>avalon-framework</td>
+<td>4.1.3</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-beanutils</td>
+<td>commons-beanutils</td>
+<td>1.7.0</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-collections</td>
+<td>commons-collections</td>
+<td>3.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-digester</td>
+<td><a href="http://jakarta.apache.org/commons/digester/" class="externalLink">commons-digester</a></td>
+<td>1.8</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-lang</td>
+<td>commons-lang</td>
+<td>2.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>commons-logging</td>
+<td>commons-logging</td>
+<td>1.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>commons-validator</td>
+<td>commons-validator</td>
+<td>1.3.1</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>logkit</td>
+<td>logkit</td>
+<td>1.0.1</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>org.springframework</td>
+<td><a href="http://www.springframework.org" class="externalLink">spring-test</a></td>
+<td>2.5.6</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>oro</td>
+<td>oro</td>
+<td>2.0.8</td>
+<td>jar</td>
+</tr>
+<tr class="a"><td>sslext</td>
+<td>sslext</td>
+<td>1.2-0</td>
+<td>jar</td>
+</tr>
+<tr class="b"><td>velocity</td>
+<td><a href="http://jakarta.apache.org/velocity/" class="externalLink">velocity</a></td>
+<td>1.4</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>runtime</h3>
+<p>The following is a list of runtime dependencies for this project. These dependencies are required to run the application:</p>
+<table class="bodyTable"><tr class="a"><th>GroupId</th>
+<th>ArtifactId</th>
+<th>Version</th>
+<th>Type</th>
+</tr>
+<tr class="b"><td>velocity</td>
+<td><a href="http://jakarta.apache.org/velocity/" class="externalLink">velocity-dep</a></td>
+<td>1.4</td>
+<td>jar</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="section"><h2>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetail( divId, imgId )
+      {
+        var div = document.getElementById( divId );
+        var img = document.getElementById( imgId );
+        if( div.style.display == '' )
+        {
+          div.style.display = 'none';
+          img.src='./images/icon_info_sml.gif';
+        }
+        else
+        {
+          div.style.display = '';
+          img.src='./images/close.gif';
+        }
+      }
+</script>
+<div class="section"><h3>Dependency Tree</h3>
+<ul><li>org.apache.struts:struts2-core:jar:2.1.6 <img id="_1968955010" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_497204294', '_1968955010' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_497204294" style="display:none"><table class="bodyTable"><tr class="a"><th>Struts 2 Core</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Apache Struts 2</p>
+<p><b>URL: </b><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">http://struts.apache.org/struts2/struts2-core</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.opensymphony:xwork:jar:2.1.2 (compile) <img id="_1772449587" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1215449161', '_1772449587' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1215449161" style="display:none"><table class="bodyTable"><tr class="a"><th>XWork</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>XWork is an command-pattern framework that is used to power WebWork
+        as well as other applications. XWork provides an Inversion of Control
+        container, a powerful expression language, data type conversion,
+        validation, and pluggable configuration.</p>
+<p><b>URL: </b><a href="http://www.opensymphony.com/xwork" class="externalLink">http://www.opensymphony.com/xwork</a></p>
+<p><b>Project License: </b><a href="src/etc/LICENSE.txt">The OpenSymphony Software License 1.1</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>opensymphony:ognl:jar:2.6.11 (compile) <img id="_1447693562" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1875033598', '_1447693562' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1875033598" style="display:none"><table class="bodyTable"><tr class="a"><th>OGNL - Object Graph Navigation Library</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://ognl.org" class="externalLink">http://ognl.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.springframework:spring-test:jar:2.5.6 (compile) <img id="_344756732" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_496181999', '_344756732' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_496181999" style="display:none"><table class="bodyTable"><tr class="a"><th>Spring Framework: Test</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Spring Framework: Test</p>
+<p><b>URL: </b><a href="http://www.springframework.org" class="externalLink">http://www.springframework.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.freemarker:freemarker:jar:2.3.13 (compile) <img id="_835803547" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1988195041', '_835803547' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1988195041" style="display:none"><table class="bodyTable"><tr class="a"><th>FreeMarker</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>FreeMarker is a &quot;template engine&quot;; a generic tool to generate text output based on templates.</p>
+<p><b>URL: </b><a href="http://www.freemarker.org" class="externalLink">http://www.freemarker.org</a></p>
+<p><b>Project License: </b><a href="http://www.freemarker.org/LICENSE.txt" class="externalLink">BSD-style license</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.servlet:servlet-api:jar:2.4 (provided) <img id="_297445761" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_402670628', '_297445761' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_402670628" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.servlet:servlet-api:jar:2.4</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>javax.servlet:jsp-api:jar:2.0 (provided) <img id="_1768391643" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_112585452', '_1768391643' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_112585452" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.servlet:jsp-api:jar:2.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div><ul><li>javax.servlet:servlet-api:jar:2.4 (provided) <img id="_691789325" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_978903546', '_691789325' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_978903546" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - javax.servlet:servlet-api:jar:2.4</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>opensymphony:ognl:jar:2.6.11 (compile) <img id="_1015355412" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_12077147', '_1015355412' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_12077147" style="display:none"><table class="bodyTable"><tr class="a"><th>OGNL - Object Graph Navigation Library</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b><a href="http://ognl.org" class="externalLink">http://ognl.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.apache.velocity:velocity:jar:1.5 (compile) <img id="_1134014778" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_674461291', '_1134014778' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_674461291" style="display:none"><table class="bodyTable"><tr class="a"><th>Apache Velocity</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Apache Velocity is a general purpose template engine.</p>
+<p><b>URL: </b><a href="http://velocity.apache.org/engine/releases/velocity-1.5/" class="externalLink">http://velocity.apache.org/engine/releases/velocity-1.5/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-collections:commons-collections:jar:3.1 (compile) <img id="_926773103" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_235741164', '_926773103' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_235741164" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - commons-collections:commons-collections:jar:3.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Types that extend and augment the Java Collections Framework.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-lang:commons-lang:jar:2.1 (compile) <img id="_2114245263" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1568461941', '_2114245263' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1568461941" style="display:none"><table class="bodyTable"><tr class="a"><th>Lang</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons.Lang, a package of Java utility classes for the
+    classes that are in java.lang's hierarchy, or are considered to be so
+    standard as to justify existence in java.lang.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>oro:oro:jar:2.0.8 (compile) <img id="_1214928866" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_222146370', '_1214928866' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_222146370" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - oro:oro:jar:2.0.8</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.apache.velocity:velocity-tools:jar:1.3 (compile) <img id="_816018306" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1772120041', '_816018306' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1772120041" style="display:none"><table class="bodyTable"><tr class="a"><th>VelocityTools</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>VelocityTools is an integrated collection of Velocity subprojects
+        with the common goal of creating tools and infrastructure to speed and ease
+        development of both web and non-web applications using the Velocity template
+        engine.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/velocity/tools/" class="externalLink">http://jakarta.apache.org/velocity/tools/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">Apache 2</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-beanutils:commons-beanutils:jar:1.7.0 (compile) <img id="_63727807" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1936210296', '_63727807' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1936210296" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - commons-beanutils:commons-beanutils:jar:1.7.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-digester:commons-digester:jar:1.8 (compile) <img id="_1345424339" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_842961848', '_1345424339' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_842961848" style="display:none"><table class="bodyTable"><tr class="a"><th>Digester</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The Digester package lets you configure an XML-&gt;Java object mapping module
+    which triggers certain actions called rules whenever a particular 
+    pattern of nested XML elements is recognized.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/commons/digester/" class="externalLink">http://jakarta.apache.org/commons/digester/</a></p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-beanutils:commons-beanutils:jar:1.7.0 (compile) <img id="_1321205089" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_834613313', '_1321205089' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_834613313" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - commons-beanutils:commons-beanutils:jar:1.7.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-logging:commons-logging:jar:1.1 (compile) <img id="_1784081568" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1432677411', '_1784081568' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1432677411" style="display:none"><table class="bodyTable"><tr class="a"><th>Logging</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>commons-logging:commons-logging:jar:1.1 (compile) <img id="_137493313" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2108327421', '_137493313' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2108327421" style="display:none"><table class="bodyTable"><tr class="a"><th>Logging</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>logkit:logkit:jar:1.0.1 (compile) <img id="_2088278378" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_390260575', '_2088278378' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_390260575" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - logkit:logkit:jar:1.0.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>avalon-framework:avalon-framework:jar:4.1.3 (compile) <img id="_528690289" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1664853633', '_528690289' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1664853633" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - avalon-framework:avalon-framework:jar:4.1.3</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>commons-validator:commons-validator:jar:1.3.1 (compile) <img id="_1208135300" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1098082595', '_1208135300' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1098082595" style="display:none"><table class="bodyTable"><tr class="a"><th>Validator</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Validator provides the building blocks for both client side validation
+    and server side data validation. It may be used standalone or with a framework like
+    Struts.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-beanutils:commons-beanutils:jar:1.7.0 (compile) <img id="_629035589" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1011064121', '_629035589' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1011064121" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - commons-beanutils:commons-beanutils:jar:1.7.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>oro:oro:jar:2.0.8 (compile) <img id="_37144528" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1260270105', '_37144528' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1260270105" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - oro:oro:jar:2.0.8</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>sslext:sslext:jar:1.2-0 (compile) <img id="_1572983688" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_99587135', '_1572983688' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_99587135" style="display:none"><table class="bodyTable"><tr class="a"><th>sslext</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-1.1" class="externalLink">Apache Software License, Version 1.1</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>velocity:velocity:jar:1.4 (compile) <img id="_1243442085" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2034327953', '_1243442085' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2034327953" style="display:none"><table class="bodyTable"><tr class="a"><th>Velocity</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Velocity is a Java-based template engine. It permits anyone to use the
+    simple yet powerful template language to reference objects defined in Java
+    code.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/velocity/" class="externalLink">http://jakarta.apache.org/velocity/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>velocity:velocity-dep:jar:1.4 (runtime) <img id="_1960051282" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_759646807', '_1960051282' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_759646807" style="display:none"><table class="bodyTable"><tr class="a"><th>Velocity</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Velocity is a Java-based template engine. It permits anyone to use the
+    simple yet powerful template language to reference objects defined in Java
+    code.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/velocity/" class="externalLink">http://jakarta.apache.org/velocity/</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>commons-fileupload:commons-fileupload:jar:1.2.1 (compile) <img id="_840517812" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1078515031', '_840517812' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1078515031" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons FileUpload</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>The FileUpload component provides a simple yet flexible means of adding support for multipart
+    file upload functionality to servlets and web applications.</p>
+<p><b>URL: </b><a href="http://commons.apache.org/fileupload/" class="externalLink">http://commons.apache.org/fileupload/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>commons-io:commons-io:jar:1.3.2 (compile) <img id="_1365178370" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_340849704', '_1365178370' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_340849704" style="display:none"><table class="bodyTable"><tr class="a"><th>Commons IO</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons-IO contains utility classes, stream implementations, file filters, and endian classes.</p>
+<p><b>URL: </b><a href="http://jakarta.apache.org/commons/io/" class="externalLink">http://jakarta.apache.org/commons/io/</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.springframework:spring-mock:jar:2.0.8 (test) <img id="_365999125" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1659048465', '_365999125' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1659048465" style="display:none"><table class="bodyTable"><tr class="a"><th>Spring Framework: Mock</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Spring Framework: Mock</p>
+<p><b>URL: </b><a href="http://www.springframework.org" class="externalLink">http://www.springframework.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-logging:commons-logging:jar:1.1 (test) <img id="_792188185" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_157362813', '_792188185' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_157362813" style="display:none"><table class="bodyTable"><tr class="a"><th>Logging</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>junit:junit:jar:3.8.2 (compile) <img id="_1181615570" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_677479671', '_1181615570' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_677479671" style="display:none"><table class="bodyTable"><tr class="a"><th>JUnit</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>JUnit is a regression testing framework written by Erich Gamma and Kent Beck. It is used by the developer who implements unit tests in Java.</p>
+<p><b>URL: </b><a href="http://junit.org" class="externalLink">http://junit.org</a></p>
+<p><b>Project License: </b><a href="http://www.opensource.org/licenses/cpl1.0.txt" class="externalLink">Common Public License Version 1.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.easymock:easymock:jar:2.0 (test) <img id="_923459928" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1079656387', '_923459928' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1079656387" style="display:none"><table class="bodyTable"><tr class="a"><th>EasyMock 2.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>EasyMock provides Mock Objects for interfaces in JUnit tests by generating them on the fly using Java's proxy mechanism. Due to EasyMock's unique style of recording expectations, most refactorings will not affect the Mock Objects. So EasyMock is a perfect fit for Test-Driven Development.</p>
+<p><b>URL: </b><a href="http://www.easymock.org" class="externalLink">http://www.easymock.org</a></p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>mockobjects:mockobjects-core:jar:0.09 (test) <img id="_1942907534" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_653614139', '_1942907534' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_653614139" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - mockobjects:mockobjects-core:jar:0.09</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>mockobjects:mockobjects-jdk1.3:jar:0.09 (test) <img id="_1400533308" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1399421231', '_1400533308' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1399421231" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - mockobjects:mockobjects-jdk1.3:jar:0.09</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>mockobjects:mockobjects-alt-jdk1.3:jar:0.09 (test) <img id="_1698525587" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_144005907', '_1698525587' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_144005907" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - mockobjects:mockobjects-alt-jdk1.3:jar:0.09</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>mockobjects:mockobjects-alt-jdk1.3-j2ee1.3:jar:0.09 (test) <img id="_594935498" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_488307424', '_594935498' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_488307424" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - mockobjects:mockobjects-alt-jdk1.3-j2ee1.3:jar:0.09</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>mockobjects:mockobjects-jdk1.3-j2ee1.3:jar:0.09 (test) <img id="_69505044" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1654907696', '_69505044' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1654907696" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - mockobjects:mockobjects-jdk1.3-j2ee1.3:jar:0.09</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>jmock:jmock:jar:1.0.1 (test) <img id="_1000853241" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1350814617', '_1000853241' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1350814617" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - jmock:jmock:jar:1.0.1</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>log4j:log4j:jar:1.2.9 (test) <img id="_1255604947" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_555522375', '_1255604947' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_555522375" style="display:none"><table class="bodyTable"><tr class="a"><th>Unnamed - log4j:log4j:jar:1.2.9</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>Project License: </b>No project license is defined for this project.</p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.apache.struts:struts-annotations:jar:1.0.4 (compile) <img id="_1230214020" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_670030348', '_1230214020' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_670030348" style="display:none"><table class="bodyTable"><tr class="a"><th>Struts Annotations</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>struts-annotations adds apt generation support for struts based annotated projetcs,
+        such as TLD and documentation generation from annotated component classes as used in struts2</p>
+<p><b>URL: </b><a href="http://struts.apache.org" class="externalLink">http://struts.apache.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>com.sun:tools:jar:1.5.0 (system) <img id="_1310986386" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_2052406147', '_1310986386' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_2052406147" style="display:none"><table class="bodyTable"><tr class="a"><th>com.sun:tools:jar:1.5.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b>/apollo/package/local_1/Generic/spectre.JavaSE5/spectre.JavaSE5-2.0-4/jdk1.5.0/jre/../lib/tools.jar</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>org.testng:testng:jar:jdk15:5.1 (compile) <img id="_1294035593" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1562242133', '_1294035593' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1562242133" style="display:none"><table class="bodyTable"><tr class="a"><th>TestNG</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>TestNG is a unit testing framework.</p>
+<p><b>URL: </b><a href="http://testng.org" class="externalLink">http://testng.org</a></p>
+<p><b>Project License: </b><a href="http://apache.org/licenses/LICENSE-2.0" class="externalLink">Apache License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+<li>org.springframework:spring:jar:2.0.8 (compile) <img id="_1506359978" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1670633580', '_1506359978' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1670633580" style="display:none"><table class="bodyTable"><tr class="a"><th>Spring Framework</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Spring Framework</p>
+<p><b>URL: </b><a href="http://www.springframework.org" class="externalLink">http://www.springframework.org</a></p>
+<p><b>Project License: </b><a href="http://www.apache.org/licenses/LICENSE-2.0.txt" class="externalLink">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div><ul><li>commons-logging:commons-logging:jar:1.1 (compile) <img id="_245492306" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1318373770', '_245492306' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1318373770" style="display:none"><table class="bodyTable"><tr class="a"><th>Logging</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>Commons Logging is a thin adapter allowing configurable bridging to other,
+    well known logging systems.</p>
+<p><b>URL: </b>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</p>
+<p><b>Project License: </b><a href="/LICENSE.txt">The Apache Software License, Version 2.0</a></p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+<li>com.sun:tools:jar:1.5.0 (system) <img id="_2061754596" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_1001120224', '_2061754596' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_1001120224" style="display:none"><table class="bodyTable"><tr class="a"><th>com.sun:tools:jar:1.5.0</th>
+</tr>
+<tr class="b"><td><p><b>Description: </b>There is currently no description associated with this project.</p>
+<p><b>URL: </b>/apollo/package/local_1/Generic/spectre.JavaSE5/spectre.JavaSE5-2.0-4/jdk1.5.0/jre/../lib/tools.jar</p>
+</td>
+</tr>
+</table>
+</div></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2>Licenses</h2>
+<p><b>Apache Software License, Version 1.1: </b>sslext</p>
+<p><b>The OpenSymphony Software License 1.1: </b>XWork</p>
+<p><b>Unknown: </b>EasyMock 2.0, OGNL - Object Graph Navigation Library, Unnamed - avalon-framework:avalon-framework:jar:4.1.3, Unnamed - commons-beanutils:commons-beanutils:jar:1.7.0, Unnamed - commons-collections:commons-collections:jar:3.1, Unnamed - javax.servlet:jsp-api:jar:2.0, Unnamed - javax.servlet:servlet-api:jar:2.4, Unnamed - jmock:jmock:jar:1.0.1, Unnamed - log4j:log4j:jar:1.2.9, Unnamed - logkit:logkit:jar:1.0.1, Unnamed - mockobjects:mockobjects-alt-jdk1.3-j2ee1.3:jar:0.09, Unnamed - mockobjects:mockobjects-alt-jdk1.3:jar:0.09, Unnamed - mockobjects:mockobjects-core:jar:0.09, Unnamed - mockobjects:mockobjects-jdk1.3-j2ee1.3:jar:0.09, Unnamed - mockobjects:mockobjects-jdk1.3:jar:0.09, Unnamed - oro:oro:jar:2.0.8, Velocity</p>
+<p><b>The Apache Software License, Version 2.0: </b>Apache Velocity, Commons FileUpload, Commons IO, Digester, Lang, Logging, Spring Framework, Spring Framework: Mock, Spring Framework: Test, Struts 2 Core, Struts Annotations, Validator, Velocity</p>
+<p><b>BSD-style license: </b>FreeMarker</p>
+<p><b>Common Public License Version 1.0: </b>JUnit</p>
+<p><b>Apache 2: </b>VelocityTools</p>
+<p><b>Apache License, Version 2.0: </b>TestNG</p>
+</div>
+<div class="section"><h2>Dependency File Details</h2>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Filename</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="b"><td align="left">avalon-framework-4.1.3.jar</td>
+<td align="right">62.47 kB</td>
+<td align="right">85</td>
+<td align="right">63</td>
+<td align="right">10</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">xwork-2.1.2.jar</td>
+<td align="right">2.18 MB</td>
+<td align="right">1,412</td>
+<td align="right">1,312</td>
+<td align="right">65</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">tools.jar</td>
+<td align="right">6.71 MB</td>
+<td align="right">2,043</td>
+<td align="right">1,913</td>
+<td align="right">87</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-beanutils-1.7.0.jar</td>
+<td align="right">184.25 kB</td>
+<td align="right">129</td>
+<td align="right">111</td>
+<td align="right">5</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-collections-3.1.jar</td>
+<td align="right">546.26 kB</td>
+<td align="right">465</td>
+<td align="right">446</td>
+<td align="right">12</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-digester-1.8.jar</td>
+<td align="right">140.24 kB</td>
+<td align="right">114</td>
+<td align="right">100</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-fileupload-1.2.1.jar</td>
+<td align="right">56.42 kB</td>
+<td align="right">60</td>
+<td align="right">43</td>
+<td align="right">5</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-io-1.3.2.jar</td>
+<td align="right">85.72 kB</td>
+<td align="right">75</td>
+<td align="right">59</td>
+<td align="right">4</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-lang-2.1.jar</td>
+<td align="right">202.85 kB</td>
+<td align="right">125</td>
+<td align="right">110</td>
+<td align="right">8</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">commons-logging-1.1.jar</td>
+<td align="right">51.67 kB</td>
+<td align="right">34</td>
+<td align="right">25</td>
+<td align="right">2</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">commons-validator-1.3.1.jar</td>
+<td align="right">135.70 kB</td>
+<td align="right">93</td>
+<td align="right">46</td>
+<td align="right">3</td>
+<td align="center">1.3</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jsp-api-2.0.jar</td>
+<td align="right">49.31 kB</td>
+<td align="right">56</td>
+<td align="right">42</td>
+<td align="right">3</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">servlet-api-2.4.jar</td>
+<td align="right">95.40 kB</td>
+<td align="right">67</td>
+<td align="right">42</td>
+<td align="right">2</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">jmock-1.0.1.jar</td>
+<td align="right">67.66 kB</td>
+<td align="right">106</td>
+<td align="right">94</td>
+<td align="right">8</td>
+<td align="center">1.2</td>
+<td align="center">release</td>
+</tr>
+<tr class="b"><td align="left">log4j-1.2.9.jar</td>
+<td align="right">344.03 kB</td>
+<td align="right">273</td>
+<td align="right">244</td>
+<td align="right">18</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">logkit-1.0.1.jar</td>
+<td align="right">70.46 kB</td>
+<td align="right">85</td>
+<td align="right">67</td>
+<td align="right">10</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">mockobjects-alt-jdk1.3-0.09.jar</td>
+<td align="right">8.08 kB</td>
+<td align="right">17</td>
+<td align="right">10</td>
+<td align="right">3</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">mockobjects-alt-jdk1.3-j2ee1.3-0.09.jar</td>
+<td align="right">12.05 kB</td>
+<td align="right">18</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">mockobjects-core-0.09.jar</td>
+<td align="right">54.85 kB</td>
+<td align="right">67</td>
+<td align="right">60</td>
+<td align="right">4</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">mockobjects-jdk1.3-0.09.jar</td>
+<td align="right">44.96 kB</td>
+<td align="right">40</td>
+<td align="right">31</td>
+<td align="right">5</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">mockobjects-jdk1.3-j2ee1.3-0.09.jar</td>
+<td align="right">65.12 kB</td>
+<td align="right">64</td>
+<td align="right">52</td>
+<td align="right">8</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">ognl-2.6.11.jar</td>
+<td align="right">164.14 kB</td>
+<td align="right">123</td>
+<td align="right">114</td>
+<td align="right">1</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">easymock-2.0.jar</td>
+<td align="right">58.97 kB</td>
+<td align="right">62</td>
+<td align="right">56</td>
+<td align="right">3</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">freemarker-2.3.13.jar</td>
+<td align="right">849.89 kB</td>
+<td align="right">655</td>
+<td align="right">623</td>
+<td align="right">17</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">spring-mock-2.0.8.jar</td>
+<td align="right">101.52 kB</td>
+<td align="right">77</td>
+<td align="right">65</td>
+<td align="right">7</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">spring-test-2.5.6.jar</td>
+<td align="right">176.68 kB</td>
+<td align="right">131</td>
+<td align="right">110</td>
+<td align="right">15</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">oro-2.0.8.jar</td>
+<td align="right">63.73 kB</td>
+<td align="right">74</td>
+<td align="right">62</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">release</td>
+</tr>
+<tr class="a"><td align="left">sslext-1.2-0.jar</td>
+<td align="right">25.60 kB</td>
+<td align="right">29</td>
+<td align="right">13</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">velocity-1.4.jar</td>
+<td align="right">352.71 kB</td>
+<td align="right">263</td>
+<td align="right">224</td>
+<td align="right">30</td>
+<td align="center">1.1</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">velocity-dep-1.4.jar</td>
+<td align="right">505.63 kB</td>
+<td align="right">418</td>
+<td align="right">356</td>
+<td align="right">47</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">junit-3.8.2.jar</td>
+<td align="right">117.81 kB</td>
+<td align="right">120</td>
+<td align="right">102</td>
+<td align="right">6</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">struts-annotations-1.0.4.jar</td>
+<td align="right">18.56 kB</td>
+<td align="right">20</td>
+<td align="right">4</td>
+<td align="right">1</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">velocity-1.5.jar</td>
+<td align="right">382.93 kB</td>
+<td align="right">282</td>
+<td align="right">246</td>
+<td align="right">25</td>
+<td align="center">1.2</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">velocity-tools-1.3.jar</td>
+<td align="right">131.72 kB</td>
+<td align="right">84</td>
+<td align="right">67</td>
+<td align="right">8</td>
+<td align="center">1.4</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><td align="left">spring-2.0.8.jar</td>
+<td align="right">2.58 MB</td>
+<td align="right">2,234</td>
+<td align="right">2,022</td>
+<td align="right">183</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="a"><td align="left">testng-5.1-jdk15.jar</td>
+<td align="right">675.98 kB</td>
+<td align="right">523</td>
+<td align="right">412</td>
+<td align="right">31</td>
+<td align="center">1.5</td>
+<td align="center">debug</td>
+</tr>
+<tr class="b"><th align="left">Total</th>
+<th align="right">Size</th>
+<th align="right">Entries</th>
+<th align="right">Classes</th>
+<th align="right">Packages</th>
+<th align="center">JDK Rev</th>
+<th align="center">Debug</th>
+</tr>
+<tr class="a"><td align="right">36</td>
+<td align="right">17.24 MB</td>
+<td align="right">10,523</td>
+<td align="right">9,358</td>
+<td align="right">656</td>
+<td align="center">1.5</td>
+<td align="right">34</td>
+</tr>
+<tr class="b"><td align="right">compile: 23</td>
+<td align="right">compile: 9.15 MB</td>
+<td align="right">compile: 7,215</td>
+<td align="right">compile: 6,381</td>
+<td align="right">compile: 459</td>
+<td align="center">-</td>
+<td align="right">compile: 22</td>
+</tr>
+<tr class="a"><td align="right">test: 9</td>
+<td align="right">test: 757.24 kB</td>
+<td align="right">test: 724</td>
+<td align="right">test: 624</td>
+<td align="right">test: 58</td>
+<td align="center">-</td>
+<td align="right">test: 8</td>
+</tr>
+<tr class="b"><td align="right">runtime: 1</td>
+<td align="right">runtime: 505.63 kB</td>
+<td align="right">runtime: 418</td>
+<td align="right">runtime: 356</td>
+<td align="right">runtime: 47</td>
+<td align="center">-</td>
+<td align="right">runtime: 1</td>
+</tr>
+<tr class="a"><td align="right">provided: 2</td>
+<td align="right">provided: 144.71 kB</td>
+<td align="right">provided: 123</td>
+<td align="right">provided: 84</td>
+<td align="right">provided: 5</td>
+<td align="center">-</td>
+<td align="right">provided: 2</td>
+</tr>
+<tr class="b"><td align="right">system: 1</td>
+<td align="right">system: 6.71 MB</td>
+<td align="right">system: 2,043</td>
+<td align="right">system: 1,913</td>
+<td align="right">system: 87</td>
+<td align="center">-</td>
+<td align="right">system: 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section"><h2>Dependency Repository Locations</h2>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Repo ID</th>
+<th align="left">URL</th>
+<th align="center">Release</th>
+<th align="center">Snapshot</th>
+</tr>
+<tr class="b"><td align="left">central</td>
+<td align="left"><a href="http://repo1.maven.org/maven2" class="externalLink">http://repo1.maven.org/maven2</a></td>
+<td align="center">Yes</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">apache.snapshots</td>
+<td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+<tr class="b"><td align="left">apacheSnapshots</td>
+<td align="left"><a href="http://people.apache.org/repo/m2-snapshot-repository/" class="externalLink">http://people.apache.org/repo/m2-snapshot-repository/</a></td>
+<td align="center">-</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Repository locations for each of the Dependencies.</p>
+<table class="bodyTable"><tbody><tr class="a"><th align="left">Artifact</th>
+<th align="center">central</th>
+<th align="center">apache.snapshots</th>
+<th align="center">apacheSnapshots</th>
+</tr>
+<tr class="b"><td align="left">avalon-framework:avalon-framework:jar:4.1.3</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">com.opensymphony:xwork:jar:2.1.2</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/com/opensymphony/xwork/2.1.2/xwork-2.1.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">com.sun:tools:jar:1.5.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-beanutils:commons-beanutils:jar:1.7.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-collections:commons-collections:jar:3.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-collections/commons-collections/3.1/commons-collections-3.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-digester:commons-digester:jar:1.8</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-fileupload:commons-fileupload:jar:1.2.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-fileupload/commons-fileupload/1.2.1/commons-fileupload-1.2.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-io:commons-io:jar:1.3.2</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-lang:commons-lang:jar:2.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">commons-logging:commons-logging:jar:1.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1/commons-logging-1.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">commons-validator:commons-validator:jar:1.3.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">javax.servlet:jsp-api:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">javax.servlet:servlet-api:jar:2.4</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">jmock:jmock:jar:1.0.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/jmock/jmock/1.0.1/jmock-1.0.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">log4j:log4j:jar:1.2.9</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">logkit:logkit:jar:1.0.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/logkit/logkit/1.0.1/logkit-1.0.1.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">mockobjects:mockobjects-alt-jdk1.3:jar:0.09</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/mockobjects/mockobjects-alt-jdk1.3/0.09/mockobjects-alt-jdk1.3-0.09.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">mockobjects:mockobjects-alt-jdk1.3-j2ee1.3:jar:0.09</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/mockobjects/mockobjects-alt-jdk1.3-j2ee1.3/0.09/mockobjects-alt-jdk1.3-j2ee1.3-0.09.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">mockobjects:mockobjects-core:jar:0.09</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/mockobjects/mockobjects-core/0.09/mockobjects-core-0.09.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">mockobjects:mockobjects-jdk1.3:jar:0.09</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/mockobjects/mockobjects-jdk1.3/0.09/mockobjects-jdk1.3-0.09.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">mockobjects:mockobjects-jdk1.3-j2ee1.3:jar:0.09</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/mockobjects/mockobjects-jdk1.3-j2ee1.3/0.09/mockobjects-jdk1.3-j2ee1.3-0.09.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">opensymphony:ognl:jar:2.6.11</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/opensymphony/ognl/2.6.11/ognl-2.6.11.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.easymock:easymock:jar:2.0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/easymock/easymock/2.0/easymock-2.0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.freemarker:freemarker:jar:2.3.13</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/freemarker/freemarker/2.3.13/freemarker-2.3.13.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.springframework:spring-mock:jar:2.0.8</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/springframework/spring-mock/2.0.8/spring-mock-2.0.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.springframework:spring-test:jar:2.5.6</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/springframework/spring-test/2.5.6/spring-test-2.5.6.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">oro:oro:jar:2.0.8</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/oro/oro/2.0.8/oro-2.0.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">sslext:sslext:jar:1.2-0</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/sslext/sslext/1.2-0/sslext-1.2-0.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">velocity:velocity:jar:1.4</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/velocity/velocity/1.4/velocity-1.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">velocity:velocity-dep:jar:1.4</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/velocity/velocity-dep/1.4/velocity-dep-1.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">junit:junit:jar:3.8.2</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.apache.struts:struts-annotations:jar:1.0.4</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/struts/struts-annotations/1.0.4/struts-annotations-1.0.4.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.apache.velocity:velocity:jar:1.5</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/velocity/velocity/1.5/velocity-1.5.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.apache.velocity:velocity-tools:jar:1.3</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/apache/velocity/velocity-tools/1.3/velocity-tools-1.3.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><td align="left">org.springframework:spring:jar:2.0.8</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/springframework/spring/2.0.8/spring-2.0.8.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="a"><td align="left">org.testng:testng:jar:jdk15:5.1</td>
+<td align="center"><a href="http://repo1.maven.org/maven2/org/testng/testng/5.1/testng-5.1-jdk15.jar" class="externalLink"><img alt="Found at http://repo1.maven.org/maven2" src="images/icon_success_sml.gif" /></a></td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr class="b"><th align="left">Total</th>
+<th align="center">central</th>
+<th align="center">apache.snapshots</th>
+<th align="center">apacheSnapshots</th>
+</tr>
+<tr class="a"><td align="left">36 (compile: 23, test: 9, runtime: 1, provided: 2, system: 1)</td>
+<td align="center">35</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2009
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

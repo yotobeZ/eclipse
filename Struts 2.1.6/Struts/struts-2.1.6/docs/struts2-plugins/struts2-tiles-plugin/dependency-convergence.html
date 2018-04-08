@@ -1,0 +1,1646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 2 - Reactor Dependency Convergence</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="../../../2.x/index.html" id="bannerRight">
+    
+                                            <img src="images/struts2.png" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-01-05
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../../../index.html">Struts</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 2</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../downloads.html">Releases</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/thanks.html" class="externalLink">Thanks!</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/sponsorship.html" class="externalLink">Sponsorship</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="docs/home.html">Getting Started</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tutorials.html">Tutorials</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/faqs.html">FAQs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/guides.html">Guides</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2WIKI/home.html" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Reference</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-core/apidocs/index.html">Struts Core / XWork APIs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tag-reference.html">Tag Reference</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2PLUGINS/home.html" class="externalLink">Plugin Registry</a>
+          </li>
+          </ul>
+              <h5>Plugin APIs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-config-browser-plugin/apidocs/index.html">Config Browser</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jasperreports-plugin/apidocs/index.html">JasperReports</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jfreechart-plugin/apidocs/index.html">JFreeChart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jsf-plugin/apidocs/index.html">JavaServer Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-pell-multipart-plugin/apidocs/index.html">Pell Multipart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-plexus-plugin/apidocs/index.html">Plexus</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitegraph-plugin/apidocs/index.html">Sitegraph</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitemesh-plugin/apidocs/index.html">Sitemesh</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-struts1-plugin/apidocs/index.html">Struts 1</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-tiles-plugin/apidocs/index.html">Tiles</a>
+          </li>
+          </ul>
+              <h5>Development</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../../2.x/index.html">Struts 2.x Draft Docs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../helping.html">How to Help FAQ</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/dev-mail.html">Development Lists</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/builds.html">Source Code</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/releases.html">Release Guidelines</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/volunteers.html">Volunteers</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/bylaws.html">PMC Charter</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../struts-sandbox/index.html">Sandbox</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://svn.apache.org/viewcvs.cgi/struts/" class="externalLink">Source Repository</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+            
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+            <li class="expanded">
+                    <a href="project-info.html">Project Information</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="index.html">About</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="integration.html">Continuous Integration</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="dependencies.html">Dependencies</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Dependency Convergence</strong>
+        </li>
+                  
+    <li class="none">
+                    <a href="dependency-management.html">Dependency Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="issue-tracking.html">Issue Tracking</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="mail-lists.html">Mailing Lists</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugin-management.html">Plugin Management</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="license.html">Project License</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="plugins.html">Project Plugins</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="project-summary.html">Project Summary</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="team-list.html">Project Team</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="source-repository.html">Source Repository</a>
+          </li>
+              </ul>
+        </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-reports.html">Project Reports</a>
+                </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <div class="section"><h2>Reactor Dependency Convergence</h2>
+<table class="bodyTable"><caption><b>Legend:</b></caption>
+<tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td>All projects share one version of the dependency.</td>
+</tr>
+<tr class="b"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td>At least one project has a differing version of the dependency.</td>
+</tr>
+</table>
+<br />
+<table class="bodyTable"><caption><b>Statistics:</b></caption>
+<tr class="a"><th>Number of sub-projects:</th>
+<td>30</td>
+</tr>
+<tr class="b"><th>Number of dependencies (NOD):</th>
+<td>86</td>
+</tr>
+<tr class="a"><th>Number of unique artifacts (NOA):</th>
+<td>96</td>
+</tr>
+<tr class="b"><th>Number of SNAPSHOT artifacts (NOS):</th>
+<td>0</td>
+</tr>
+<tr class="a"><th>Convergence (NOD/NOA):</th>
+<td><img alt="error" src="images/icon_error_sml.gif" />&#160;<b>89%</b></td>
+</tr>
+<tr class="b"><th>Ready for Release (100% Convergence and no SNAPSHOTS):</th>
+<td><img alt="error" src="images/icon_error_sml.gif" />&#160;<b>Error</b><br />
+You do not have 100% convergence.</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3>Dependencies used in sub-projects</h3>
+<div class="section"><h4>ant:ant</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.6.5</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>com.bekk.boss:maven-jetty-pluto-embedded</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>com.opensymphony:xwork</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.1.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>com.sun:tools</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.5.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>com.thoughtworks.xstream:xstream</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.2.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-collections:commons-collections</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">3.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-digester:commons-digester</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-el:commons-el</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-fileupload:commons-fileupload</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.1.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+<tr class="a"><td width="25%">1.2.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-httpclient:commons-httpclient</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">3.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-io:commons-io</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="b"><td width="25%">1.3.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-lang:commons-lang</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>commons-logging:commons-logging</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0.4</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>eclipse:jdtcore</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">3.1.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>jasperreports:jasperreports</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">3.0.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jasperreports-plugin" class="externalLink">org.apache.struts:struts2-jasperreports-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>javax.servlet:jsp-api</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-blank" class="externalLink">org.apache.struts:struts2-blank</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-convention-plugin" class="externalLink">org.apache.struts:struts2-convention-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-tiles-plugin" class="externalLink">org.apache.struts:struts2-tiles-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>javax.servlet:servlet-api</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.4</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-blank" class="externalLink">org.apache.struts:struts2-blank</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-config-browser-plugin" class="externalLink">org.apache.struts:struts2-config-browser-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-convention-plugin" class="externalLink">org.apache.struts:struts2-convention-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dwr-plugin" class="externalLink">org.apache.struts:struts2-dwr-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jasperreports-plugin" class="externalLink">org.apache.struts:struts2-jasperreports-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-javatemplates-plugin" class="externalLink">org.apache.struts:struts2-javatemplates-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jfreechart-plugin" class="externalLink">org.apache.struts:struts2-jfreechart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jsf-plugin" class="externalLink">org.apache.struts:struts2-jsf-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-junit-plugin" class="externalLink">org.apache.struts:struts2-junit-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-mailreader" class="externalLink">org.apache.struts:struts2-mailreader</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-pell-multipart-plugin" class="externalLink">org.apache.struts:struts2-pell-multipart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-plexus-plugin" class="externalLink">org.apache.struts:struts2-plexus-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins" class="externalLink">org.apache.struts:struts2-plugins</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitemesh-plugin" class="externalLink">org.apache.struts:struts2-sitemesh-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-tiles-plugin" class="externalLink">org.apache.struts:struts2-tiles-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>jetty:org.mortbay.jetty</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">5.1.4</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>jfree:jcommon</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jfreechart-plugin" class="externalLink">org.apache.struts:struts2-jfreechart-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>jfree:jfreechart</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jfreechart-plugin" class="externalLink">org.apache.struts:struts2-jfreechart-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>jmock:jmock</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>jmock:jmock-cglib</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>junit:junit</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">3.8.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-convention-plugin" class="externalLink">org.apache.struts:struts2-convention-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-javatemplates-plugin" class="externalLink">org.apache.struts:struts2-javatemplates-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="a"><td width="25%">3.8.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-config-browser-plugin" class="externalLink">org.apache.struts:struts2-config-browser-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dwr-plugin" class="externalLink">org.apache.struts:struts2-dwr-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jasperreports-plugin" class="externalLink">org.apache.struts:struts2-jasperreports-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jfreechart-plugin" class="externalLink">org.apache.struts:struts2-jfreechart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jsf-plugin" class="externalLink">org.apache.struts:struts2-jsf-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-junit-plugin" class="externalLink">org.apache.struts:struts2-junit-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-pell-multipart-plugin" class="externalLink">org.apache.struts:struts2-pell-multipart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-plexus-plugin" class="externalLink">org.apache.struts:struts2-plexus-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins" class="externalLink">org.apache.struts:struts2-plugins</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitemesh-plugin" class="externalLink">org.apache.struts:struts2-sitemesh-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-tiles-plugin" class="externalLink">org.apache.struts:struts2-tiles-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>log4j:log4j</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.2.9</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>mockobjects:mockobjects-alt-jdk1.3</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">0.09</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>mockobjects:mockobjects-alt-jdk1.3-j2ee1.3</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">0.09</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>mockobjects:mockobjects-core</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">0.09</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jfreechart-plugin" class="externalLink">org.apache.struts:struts2-jfreechart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jsf-plugin" class="externalLink">org.apache.struts:struts2-jsf-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>mockobjects:mockobjects-jdk1.3</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">0.09</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>mockobjects:mockobjects-jdk1.3-j2ee1.3</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">0.09</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>myfaces:myfaces-jsf-api</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.0.9</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jsf-plugin" class="externalLink">org.apache.struts:struts2-jsf-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>net.sf.json-lib:json-lib</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>net.sourceforge.jwebunit:jwebunit-core</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.4.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>net.sourceforge.jwebunit:jwebunit-htmlunit-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.4.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>opensymphony:ognl</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.6.11</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>opensymphony:pell-multipart</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.5</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-pell-multipart-plugin" class="externalLink">org.apache.struts:struts2-pell-multipart-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>opensymphony:sitemesh</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitemesh-plugin" class="externalLink">org.apache.struts:struts2-sitemesh-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.myfaces.core:myfaces-api</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.1.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.myfaces.core:myfaces-impl</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.1.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts-annotations</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.0.4</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts-core</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.3.10</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts-mailreader-dao</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">1.3.5</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-mailreader" class="externalLink">org.apache.struts:struts2-mailreader</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-codebehind-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-config-browser-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-convention-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-core</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps" class="externalLink">org.apache.struts:struts2-apps</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-blank" class="externalLink">org.apache.struts:struts2-blank</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-config-browser-plugin" class="externalLink">org.apache.struts:struts2-config-browser-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-convention-plugin" class="externalLink">org.apache.struts:struts2-convention-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dwr-plugin" class="externalLink">org.apache.struts:struts2-dwr-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jasperreports-plugin" class="externalLink">org.apache.struts:struts2-jasperreports-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-javatemplates-plugin" class="externalLink">org.apache.struts:struts2-javatemplates-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jfreechart-plugin" class="externalLink">org.apache.struts:struts2-jfreechart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-jsf-plugin" class="externalLink">org.apache.struts:struts2-jsf-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-junit-plugin" class="externalLink">org.apache.struts:struts2-junit-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-mailreader" class="externalLink">org.apache.struts:struts2-mailreader</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-pell-multipart-plugin" class="externalLink">org.apache.struts:struts2-pell-multipart-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-plexus-plugin" class="externalLink">org.apache.struts:struts2-plexus-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins" class="externalLink">org.apache.struts:struts2-plugins</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitemesh-plugin" class="externalLink">org.apache.struts:struts2-sitemesh-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-tiles-plugin" class="externalLink">org.apache.struts:struts2-tiles-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-dojo-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-dwr-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-jasperreports-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-javatemplates-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-jfreechart-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-jsf-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-junit-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-blank" class="externalLink">org.apache.struts:struts2-blank</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-pell-multipart-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-plexus-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-portlet-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-rest-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-sitegraph-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-sitemesh-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-spring-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-struts1-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-testng-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.struts:struts2-tiles-plugin</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.1.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-assembly" class="externalLink">org.apache.struts:struts2-assembly</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.tiles:tiles-core</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.0.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-tiles-plugin" class="externalLink">org.apache.struts:struts2-tiles-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.tiles:tiles-jsp</h4>
+<table class="bodyTable"><tr class="b"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="a"><td width="25%">2.0.5</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+<tr class="b"><td width="25%">2.0.6</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-tiles-plugin" class="externalLink">org.apache.struts:struts2-tiles-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.velocity:velocity</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.5</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitemesh-plugin" class="externalLink">org.apache.struts:struts2-sitemesh-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.apache.velocity:velocity-tools</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitemesh-plugin" class="externalLink">org.apache.struts:struts2-sitemesh-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.codehaus.plexus:plexus-container-default</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0-alpha-10</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-plexus-plugin" class="externalLink">org.apache.struts:struts2-plexus-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.easymock:easymock</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="a"><td width="25%">2.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-javatemplates-plugin" class="externalLink">org.apache.struts:struts2-javatemplates-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="b"><td width="25%">2.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-convention-plugin" class="externalLink">org.apache.struts:struts2-convention-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.easymock:easymockclassextension</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.2</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-javatemplates-plugin" class="externalLink">org.apache.struts:struts2-javatemplates-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.freemarker:freemarker</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.3.13</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.mortbay.jetty:jetty</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">6.1.4rc0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.mortbay.jetty:jsp-2.1</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">6.1.4rc0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.0.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-beans</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.5.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-context</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.5.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-core</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.2.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="a"><td width="25%">2.0.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-junit-plugin" class="externalLink">org.apache.struts:struts2-junit-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="b"><td width="25%">2.5.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-mock</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="error" src="images/icon_error_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.2.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-rest-plugin" class="externalLink">org.apache.struts:struts2-rest-plugin</a></li>
+</ol>
+</td>
+</tr>
+<tr class="a"><td width="25%">2.0.7</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-apps" class="externalLink">org.apache.struts:struts2-apps</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-blank" class="externalLink">org.apache.struts:struts2-blank</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-mailreader" class="externalLink">org.apache.struts:struts2-mailreader</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-rest-showcase" class="externalLink">org.apache.struts:struts2-rest-showcase</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+<tr class="b"><td width="25%">2.0.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-codebehind-plugin" class="externalLink">org.apache.struts:struts2-codebehind-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dojo-plugin" class="externalLink">org.apache.struts:struts2-dojo-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-junit-plugin" class="externalLink">org.apache.struts:struts2-junit-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-struts1-plugin" class="externalLink">org.apache.struts:struts2-struts1-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-portlet</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.0.8</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-test</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.5.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.springframework:spring-web</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">2.5.3</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-spring-plugin" class="externalLink">org.apache.struts:struts2-spring-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>org.testng:testng</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">5.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-core" class="externalLink">org.apache.struts:struts2-core</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-testng-plugin" class="externalLink">org.apache.struts:struts2-testng-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>portlet-api:portlet-api</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.0</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-portlet-plugin" class="externalLink">org.apache.struts:struts2-portlet-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-portlet" class="externalLink">org.apache.struts:struts2-portlet</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>tomcat:jasper-compiler</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">5.5.12</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>tomcat:jasper-compiler-jdt</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">5.5.12</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>tomcat:jasper-runtime</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">5.5.12</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-sitegraph-plugin" class="externalLink">org.apache.struts:struts2-sitegraph-plugin</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="section"><h4>uk.ltd.getahead:dwr</h4>
+<table class="bodyTable"><tr class="a"><td><img alt="success" src="images/icon_success_sml.gif" /></td>
+<td><table class="bodyTable"><tr class="b"><td width="25%">1.1.1</td>
+<td><ol type="a"><li><a href="http://struts.apache.org/struts2/struts2-plugins/struts2-dwr-plugin" class="externalLink">org.apache.struts:struts2-dwr-plugin</a></li>
+<li><a href="http://struts.apache.org/struts2/struts2-apps/struts2-showcase" class="externalLink">org.apache.struts:struts2-showcase</a></li>
+</ol>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2009
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>

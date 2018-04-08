@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Struts 2 - Surefire Report</title>
+    <style type="text/css" media="all">
+      @import url("./css/maven-base.css");
+      @import url("./css/maven-theme.css");
+      @import url("./css/site.css");
+    </style>
+    <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      </head>
+  <body class="composite">
+    <div id="banner">
+                  <a href="http://www.apache.org/" id="bannerLeft">
+    
+                                    <img src="http://www.apache.org/images/asf-logo.gif" alt="" />
+    
+            </a>
+                        <a href="../../../2.x/index.html" id="bannerRight">
+    
+                                            <img src="images/struts2.png" alt="" />
+    
+            </a>
+            <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="breadcrumbs">
+          
+  
+
+  
+    
+  
+  
+    
+            <div class="xleft">
+        Last Published: 2009-01-05
+                      </div>
+            <div class="xright">            <a href="http://www.apache.org/" class="externalLink">Apache</a>
+            |
+                <a href="../../../index.html">Struts</a>
+            
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+    <div id="leftColumn">
+      <div id="navcolumn">
+           
+  
+
+  
+    
+  
+  
+    
+                   <h5>Struts 2</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="index.html">Welcome</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../downloads.html">Releases</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/thanks.html" class="externalLink">Thanks!</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://apache.org/foundation/sponsorship.html" class="externalLink">Sponsorship</a>
+          </li>
+          </ul>
+              <h5>Documentation</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="docs/home.html">Getting Started</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tutorials.html">Tutorials</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/faqs.html">FAQs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/guides.html">Guides</a>
+          </li>
+          </ul>
+              <h5>Support</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../../mail.html">User Mailing List</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://issues.apache.org/struts/" class="externalLink">Issue Tracker (JIRA)</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2WIKI/home.html" class="externalLink">Wiki Pages</a>
+          </li>
+          </ul>
+              <h5>Reference</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-core/apidocs/index.html">Struts Core / XWork APIs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="docs/tag-reference.html">Tag Reference</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://cwiki.apache.org/S2PLUGINS/home.html" class="externalLink">Plugin Registry</a>
+          </li>
+          </ul>
+              <h5>Plugin APIs</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-config-browser-plugin/apidocs/index.html">Config Browser</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jasperreports-plugin/apidocs/index.html">JasperReports</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jfreechart-plugin/apidocs/index.html">JFreeChart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-jsf-plugin/apidocs/index.html">JavaServer Faces</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-pell-multipart-plugin/apidocs/index.html">Pell Multipart</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-plexus-plugin/apidocs/index.html">Plexus</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitegraph-plugin/apidocs/index.html">Sitegraph</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-sitemesh-plugin/apidocs/index.html">Sitemesh</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-struts1-plugin/apidocs/index.html">Struts 1</a>
+          </li>
+              
+    <li class="none">
+                    <a href="struts2-plugins/struts2-tiles-plugin/apidocs/index.html">Tiles</a>
+          </li>
+          </ul>
+              <h5>Development</h5>
+            <ul>
+              
+    <li class="none">
+                    <a href="../../../2.x/index.html">Struts 2.x Draft Docs</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../helping.html">How to Help FAQ</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/dev-mail.html">Development Lists</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/builds.html">Source Code</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/releases.html">Release Guidelines</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/volunteers.html">Volunteers</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../dev/bylaws.html">PMC Charter</a>
+          </li>
+              
+    <li class="none">
+                    <a href="../../../struts-sandbox/index.html">Sandbox</a>
+          </li>
+              
+    <li class="none">
+                    <a href="http://svn.apache.org/viewcvs.cgi/struts/" class="externalLink">Source Repository</a>
+          </li>
+          </ul>
+              <h5>Project Documentation</h5>
+            <ul>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+            
+      
+              
+        <li class="collapsed">
+                    <a href="project-info.html">Project Information</a>
+                </li>
+              
+                
+              
+      
+            
+      
+            
+      
+            
+            
+              
+            <li class="expanded">
+                    <a href="project-reports.html">Project Reports</a>
+                  <ul>
+                  
+    <li class="none">
+                    <a href="apidocs/index.html">JavaDocs</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="rat-report.html">RAT Report</a>
+          </li>
+                  
+    <li class="none">
+                    <a href="jxr.html">Source Xref</a>
+          </li>
+                  
+    <li class="none">
+              <strong>Surefire Report</strong>
+        </li>
+              </ul>
+        </li>
+          </ul>
+                                           <a href="http://maven.apache.org/" title="Built by Maven" class="poweredBy">
+            <img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+          </a>
+                       
+  
+
+  
+    
+  
+  
+    
+        </div>
+    </div>
+    <div id="bodyColumn">
+      <div id="contentBox">
+        <script type="text/javascript">
+function toggleDisplay(elementId) {
+ var elm = document.getElementById(elementId + 'error');
+ if (elm && typeof elm.style != "undefined") {
+ if (elm.style.display == "none") {
+ elm.style.display = "";
+ document.getElementById(elementId + 'off').style.display = "none";
+ document.getElementById(elementId + 'on').style.display = "inline";
+ } else if (elm.style.display == "") { elm.style.display = "none";
+ document.getElementById(elementId + 'off').style.display = "inline";
+ document.getElementById(elementId + 'on').style.display = "none";
+ } 
+ } 
+ }
+</script><div class="section"><h2>Surefire Report</h2>
+</div>
+<div class="section"><h2><a name="Summary"></a>Summary</h2>
+<div class="section">[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</div>
+<br />
+<table class="bodyTable"><tr class="a"><th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="b"><td>69</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>7.175</td>
+</tr>
+</table>
+<br />
+Note: failures are anticipated and checked for with assertions while errors are unanticipated.<br />
+</div>
+<div class="section"><h2><a name="Package_List"></a>Package List</h2>
+<div class="section">[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</div>
+<br />
+<table class="bodyTable"><tr class="a"><th>Package</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.servlet">org.apache.struts2.portlet.servlet</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.244</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet">org.apache.struts2.portlet</a></td>
+<td>16</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.132</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.interceptor">org.apache.struts2.portlet.interceptor</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>1.443</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.components">org.apache.struts2.components</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>1.584</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.dispatcher">org.apache.struts2.portlet.dispatcher</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>1.542</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.views.jsp">org.apache.struts2.views.jsp</a></td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>2.066</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.result">org.apache.struts2.portlet.result</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.027</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet.util">org.apache.struts2.portlet.util</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.04</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.context">org.apache.struts2.portlet.context</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.097</td>
+</tr>
+</table>
+<br />
+Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.<div class="section"><h3><a name="org.apache.struts2.portlet.servlet"></a>org.apache.struts2.portlet.servlet</h3>
+<table class="bodyTable"><tr class="a"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.servletPortletServletRequestTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.servletPortletServletRequestTest">PortletServletRequestTest</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.244</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet"></a>org.apache.struts2.portlet</h3>
+<table class="bodyTable"><tr class="a"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portletPortletSessionMapTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portletPortletSessionMapTest">PortletSessionMapTest</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.09</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portletPortletRequestMapTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portletPortletRequestMapTest">PortletRequestMapTest</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.006</td>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portletPortletApplicationMapTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portletPortletApplicationMapTest">PortletApplicationMapTest</a></td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.036</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.interceptor"></a>org.apache.struts2.portlet.interceptor</h3>
+<table class="bodyTable"><tr class="a"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="b"><td><a href="#org.apache.struts2.portlet.interceptorPortletAwareInterceptorTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.interceptorPortletAwareInterceptorTest">PortletAwareInterceptorTest</a></td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.027</td>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet.interceptorPortletStateInterceptorTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.interceptorPortletStateInterceptorTest">PortletStateInterceptorTest</a></td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>1.416</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.components"></a>org.apache.struts2.components</h3>
+<table class="bodyTable"><tr class="b"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.componentsPortletUrlRendererTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.componentsPortletUrlRendererTest">PortletUrlRendererTest</a></td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>1.584</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.dispatcher"></a>org.apache.struts2.portlet.dispatcher</h3>
+<table class="bodyTable"><tr class="b"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet.dispatcherJsr168DispatcherTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.dispatcherJsr168DispatcherTest">Jsr168DispatcherTest</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>1.542</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.views.jsp"></a>org.apache.struts2.views.jsp</h3>
+<table class="bodyTable"><tr class="b"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.views.jspPortletUrlTagTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.views.jspPortletUrlTagTest">PortletUrlTagTest</a></td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>2.066</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.result"></a>org.apache.struts2.portlet.result</h3>
+<table class="bodyTable"><tr class="b"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet.resultPortletResultTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.resultPortletResultTest">PortletResultTest</a></td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.027</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.util"></a>org.apache.struts2.portlet.util</h3>
+<table class="bodyTable"><tr class="b"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet.utilPortletUrlHelperTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.utilPortletUrlHelperTest">PortletUrlHelperTest</a></td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.04</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.context"></a>org.apache.struts2.portlet.context</h3>
+<table class="bodyTable"><tr class="b"><th></th>
+<th>Class</th>
+<th>Tests</th>
+<th>Errors </th>
+<th>Failures</th>
+<th>Skipped</th>
+<th>Success Rate</th>
+<th>Time</th>
+</tr>
+<tr class="a"><td><a href="#org.apache.struts2.portlet.contextPortletActionContextTest"><img src="images/icon_success_sml.gif" /></a></td>
+<td><a href="#org.apache.struts2.portlet.contextPortletActionContextTest">PortletActionContextTest</a></td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+<td>0.097</td>
+</tr>
+</table>
+</div>
+<br />
+</div>
+<div class="section"><h2><a name="Test_Cases"></a>Test Cases</h2>
+<div class="section">[<a href="#Summary">Summary</a>] [<a href="#Package_List">Package List</a>] [<a href="#Test_Cases">Test Cases</a>]</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.contextPortletActionContextTest"></a>PortletActionContextTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetPhase</td>
+<td>0.072</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testIsRender</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testIsEvent</td>
+<td>0.001</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetPortletConfig</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetRenderRequestAndResponse</td>
+<td>0.001</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetRenderRequestAndResponseInEventPhase</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetActionRequestAndResponse</td>
+<td>0</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetActionRequestAndResponseInRenderPhase</td>
+<td>0</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetNamespace</td>
+<td>0.001</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetDefaultActionForMode</td>
+<td>0.001</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.utilPortletUrlHelperTest"></a>PortletUrlHelperTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testCreateRenderUrlWithNoModeOrState</td>
+<td>0.037</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testCreateRenderUrlWithDifferentPortletMode</td>
+<td>0</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testCreateRenderUrlWithDifferentWindowState</td>
+<td>0</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testCreateActionUrl</td>
+<td>0.001</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.interceptorPortletAwareInterceptorTest"></a>PortletAwareInterceptorTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testPortletRequestIsSet</td>
+<td>0.026</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portletPortletSessionMapTest"></a>PortletSessionMapTest</h3>
+<table class="bodyTable"><tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testPut</td>
+<td>0.086</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGet</td>
+<td>0</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testClear</td>
+<td>0</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testRemove</td>
+<td>0</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testEntrySet</td>
+<td>0.001</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.interceptorPortletStateInterceptorTest"></a>PortletStateInterceptorTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testCopyValueStackFromEventToRenderPhase</td>
+<td>0.932</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testDoNotRestoreValueStackInRenderPhaseWhenProperPrg</td>
+<td>0.221</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testRestoreValueStackInRenderPhaseWhenNotProperPrg</td>
+<td>0.26</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portletPortletRequestMapTest"></a>PortletRequestMapTest</h3>
+<table class="bodyTable"><tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testPut</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGet</td>
+<td>0</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testClear</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testRemove</td>
+<td>0.001</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testEntrySet</td>
+<td>0.001</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.componentsPortletUrlRendererTest"></a>PortletUrlRendererTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldIncludeCurrentNamespaceIfNoNamespaceSpecifiedForRenderUrl</td>
+<td>0.248</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldIncludeCurrentNamespaceIfNoNamespaceSpecifiedForRenderFormUrl</td>
+<td>0.382</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldEvaluateActionAsOGNLExpression</td>
+<td>0.145</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldEvaluateAnchorAsOGNLExpression</td>
+<td>0.384</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldPassThroughRenderUrlToServletUrlRendererIfNotPortletRequest</td>
+<td>0.208</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldPassThroughRenderFormUrlToServletUrlRendererIfNotPortletRequest</td>
+<td>0.127</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testShouldPassThroughRenderUrlToServletUrlRendererWhenPortletUrlTypeIsNone</td>
+<td>0.087</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portletPortletApplicationMapTest"></a>PortletApplicationMapTest</h3>
+<table class="bodyTable"><tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testPut</td>
+<td>0.01</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testClear</td>
+<td>0.001</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testRemove</td>
+<td>0</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testEntrySet</td>
+<td>0.003</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetFromAttributes</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetFromInitParameters</td>
+<td>0</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.views.jspPortletUrlTagTest"></a>PortletUrlTagTest</h3>
+<table class="bodyTable"><tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testEnsureParamsAreStringArrays</td>
+<td>0.11</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testSetWindowState</td>
+<td>0.102</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testSetPortletMode</td>
+<td>0.092</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testUrlWithQueryParams</td>
+<td>0.091</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testActionUrl</td>
+<td>0.102</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testResourceUrl</td>
+<td>0.11</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testResourceUrlWithNestedParam</td>
+<td>0.087</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testResourceUrlWithTwoNestedParam</td>
+<td>0.455</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testResourceUrlWithNestedParamThatIsNotString</td>
+<td>0.178</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testResourceUrlWithNestedOgnlExpressionParamThatIsNotString</td>
+<td>0.146</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testUrlWithMethod</td>
+<td>0.079</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testUrlWithNoActionOrMethod</td>
+<td>0.109</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testUrlShouldNotIncludeParamsFromHttpQueryString</td>
+<td>0.26</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testUrlShouldIgnoreIncludeParams</td>
+<td>0.14</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.dispatcherJsr168DispatcherTest"></a>Jsr168DispatcherTest</h3>
+<table class="bodyTable"><tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testParseConfigWithBang</td>
+<td>0.005</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testRender_ok</td>
+<td>1.072</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testProcessAction_ok</td>
+<td>0.31</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testModeChangeUsingPortletWidgets</td>
+<td>0.075</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testMultipartRequest_parametersAreCopiedToActionInvocation</td>
+<td>0.076</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.servletPortletServletRequestTest"></a>PortletServletRequestTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetServletPathShouldHandleDefaultActionExtension</td>
+<td>0.052</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetServletPathShouldHandleCustomActionExtension</td>
+<td>0.05</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetServletPathShouldHandleNoExtension</td>
+<td>0.05</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testGetServletPathShouldHandleMultipleExtensionsByUsingTheFirst</td>
+<td>0.05</td>
+</tr>
+</table>
+</div>
+<div class="section"><h3><a name="org.apache.struts2.portlet.resultPortletResultTest"></a>PortletResultTest</h3>
+<table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testDoExecute_render</td>
+<td>0.022</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testDoExecute_event_locationIsAction</td>
+<td>0</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testDoExecute_event_locationIsJsp</td>
+<td>0.001</td>
+</tr>
+<tr class="a"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testDoExecute_event_locationHasQueryParams</td>
+<td>0.001</td>
+</tr>
+<tr class="b"><td><img src="images/icon_success_sml.gif" /></td>
+<td>testTitleAndContentType</td>
+<td>0.001</td>
+</tr>
+</table>
+</div>
+<br />
+</div>
+<br />
+
+      </div>
+    </div>
+    <div class="clear">
+      <hr/>
+    </div>
+    <div id="footer">
+      <div class="xright">&#169;  
+          2000-2009
+    
+          Apache Software Foundation
+          
+  
+
+  
+    
+  
+  
+    
+  </div>
+      <div class="clear">
+        <hr/>
+      </div>
+    </div>
+  </body>
+</html>
